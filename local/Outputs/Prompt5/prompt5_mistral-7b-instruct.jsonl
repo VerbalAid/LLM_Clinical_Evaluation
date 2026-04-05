@@ -1,0 +1,124 @@
+{
+  "specialization": "URGENCIAS",
+  "case": "Una joven de 24 años sufre una caída de la bicicleta con traumatismo en la zona abdominal con el manillar. A las pocas horas del traumatismo comienza con dolor intenso en hipocondrio izquierdo por lo que acude a consultar a un servicio de urgencias. A su llegada el paciente se encuentra pálida y sudorosa, las cifras de presión arterial son 82/54 mmHg y la frecuencia cardiaca es de 120 latidos por minuto. ¿Qué tipo de shock es el que más probablemente padece esta paciente?",
+  "options": [
+    "Hipovolémico.",
+    "Séptico.",
+    "Cardiogénico.",
+    "Anafiláctico.",
+    "Neurogénico."
+  ],
+  "correct_option": "Hipovolémico.",
+  "first_answered_option": "Hipovolémico.",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 1: se trata de una paciente en shock que acude al servicio de urgencias. El antecedente de traumatismo en bicicleta nos da la primera pista para sospechar de un shock hipovolémico traumático #traumatismo en la zona abdominal con el manillar# en este tipo de accidentes el trauma esplénico es muy habitual, además la paciente presenta dolor en la localización anatómica donde se encuentra el bazo #dolor intenso en hipocondrio izquierdo# . Por otra parte, presenta las características clínicas esperables del shock hipovolémico: palidez, hipotensión y taquicardia #pálida y sudorosa, las cifras de presión arterial son 82/54 mmHg y la frecuencia cardiaca es de 120#      incorrecta 2: son principalmente los antecedentes los que nos descartan otros tipos de shock. Debería hablarnos de antecedente infeccioso, fiebre, etc. para sospechar de un shock séptico @traumatismo en la zona abdominal con el manillar@ @pálida y sudorosa@      incorrecta 3: tampoco tenemos antecedentes cardiológicos ni sintomatología a este nivel para sospechar de un shock cardiogénico@traumatismo en la zona abdominal con el manillar@      incorrecta 4: del mismo modo, sospecharíamos de un shock anafiláctico ante contacto con un alérgeno conocido o potencial, el cual no se nombra en el caso@traumatismo en la zona abdominal con el manillar@      incorrecta 5: es cierto que un traumatismo de este calibre podría generar un shock neurogénico debido al dolor. Pero el shock neurogénico ocurre inmediatamente después del traumatismo y en este caso la paciente ha tenido un periodo prácticamente asintomático @A las pocas horas del traumatismo comienza@",
+  "first_argument_confidence": "100%",
+  "relations_raw": "(traumatismo en la zona abdominal con el manillar, support, 1)\n(trauma esplénico, support, 1)\n(dolor intenso en hipocondrio izquierdo, support, 1)\n(pálida y sudorosa, support, 1)\n(cifras de presión arterial son 82/54 mmHg, support, 1)\n(frecuencia cardiaca es de 120, support, 1)\n(traumatismo en la zona abdominal con el manillar, attack, 2)\n(pálida, attack, 2)\n(sudorosa, attack, 2)\n(traumatismo en la zona abdominal con el manillar, attack, 3)\n(traumatismo en la zona abdominal con el manillar, attack, 4)\n(A las pocas horas del traumatismo comienza, attack, 5)",
+  "evidence_relations": [
+    {
+      "evidence": "traumatismo en la zona abdominal con el manillar",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Hipovolémico."
+    },
+    {
+      "evidence": "trauma esplénico",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Hipovolémico."
+    },
+    {
+      "evidence": "dolor intenso en hipocondrio izquierdo",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Hipovolémico."
+    },
+    {
+      "evidence": "pálida y sudorosa",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Hipovolémico."
+    },
+    {
+      "evidence": "cifras de presión arterial son 82/54 mmHg",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Hipovolémico."
+    },
+    {
+      "evidence": "frecuencia cardiaca es de 120",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Hipovolémico."
+    },
+    {
+      "evidence": "traumatismo en la zona abdominal con el manillar",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "Séptico."
+    },
+    {
+      "evidence": "pálida",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "Séptico."
+    },
+    {
+      "evidence": "sudorosa",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "Séptico."
+    },
+    {
+      "evidence": "traumatismo en la zona abdominal con el manillar",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "Cardiogénico."
+    },
+    {
+      "evidence": "traumatismo en la zona abdominal con el manillar",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Anafiláctico."
+    },
+    {
+      "evidence": "A las pocas horas del traumatismo comienza",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Neurogénico."
+    }
+  ],
+  "neutralized_argumentation": " The presented case involves a patient presenting to the emergency department with signs of shock, following a bicycle accident. Trauma to the abdomen with the handlebar is suggestive of a traumatic hypovolemic shock due to possible splenic trauma, which is common in such accidents. The patient reports intense left hypochondrial pain, indicative of injury to the spleen. Additionally, the clinical features consistent with hypovolemic shock are present: pallor, hypotension, and tachycardia (pale and diaphoretic, blood pressure 82/54 mmHg, heart rate 120). Other types of shock are less likely given the absence of infectious antecedents or fever. Cardiogenic shock is also unlikely due to the lack of relevant cardiac antecedents or symptoms. Anaphylactic shock is improbable without known or potential allergen exposure. While neurogenic shock could potentially result from such trauma, it typically occurs immediately post-trauma and the patient has had a nearly asymptomatic period since the accident (neurogenic shock usually occurs within hours of trauma)."
+}
+{
+  "specialization": "INFECCIOSAS",
+  "case": "Ante una niña de 7 meses de edad que acude a urgencias con un cuadro sugerente de bronquiolitis ¿cuál sería el agente etiológico más probable?",
+  "options": [
+    "Adenovirus.",
+    "Virus parainfluenza 1.",
+    "Virus de la gripe B.",
+    "Bocavirus.",
+    "Virus respiratorio sincitial."
+  ],
+  "correct_option": "Virus respiratorio sincitial.",
+  "first_answered_option": "Virus respiratorio sincitial.",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 5: pregunta completamente teórica y directa. El microorganismo principalmente implicado en la bronquiolitis del lactante es el virus respiratorio sincitial (VRS) #bronquiolitis# #agente etiológico#      incorrectas 1,2,3,4: POR DESCARTE",
+  "first_argument_confidence": "100%",
+  "relations_raw": "(bronquiolitis, support, 5)\n(agente etiológico, support, 5)\n(None)",
+  "evidence_relations": [
+    {
+      "evidence": "bronquiolitis",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Virus respiratorio sincitial."
+    },
+    {
+      "evidence": "agente etiológico",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Virus respiratorio sincitial."
+    }
+  ],
+  "neutralized_argumentation": " The primary microorganism associated with bronchiolitis in infants is the Respiratory Syncytial Virus (RSV). This statement is supported by extensive epidemiological evidence and laboratory findings. Other potential etiological agents for bronchiolitis, such as rhinovirus, influenza virus, metapneumovirus, and parainfluenza viruses, can be excluded based on their lower prevalence in this particular context."
+}

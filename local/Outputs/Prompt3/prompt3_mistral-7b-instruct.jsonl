@@ -1,0 +1,286 @@
+{
+  "specialization": "DIGESTIVO",
+  "case": "Una mujer de 49 años acude de Urgencias por presentar tiritona, fiebre de 39ºC dolor en hipocondrio derecho, ictericia y vómitos. La exploración revela TA 100/50 mmHg. FC 110 lpm. Postración y dolor a la palpación en cuadrante derecho, con Murphy positivo. La analítica muestra leucocitosis con desviación izquierda y la ecografía abdominal, colelitiasis, coledocolitiasis y dilatación de la vía biliar extrahepática. Se inicia tratamiento empírico con antibiótico y fluidoterapia. ¿Cuál es el procedimiento más eficaz para realizar a continuación?",
+  "options": [
+    "Mantener tratamiento antibiótico y medidas de soporte con colecistectomía reglada posterior.",
+    "Colecistectomía laparoscópica.",
+    "Colocación de un drenaje biliar externo.",
+    "Colecistectomía urgente con canulación del colédoco.",
+    "Colangiopancreatografía retrógrada endoscópica con esfinterotomía."
+  ],
+  "correct_option": "Colangiopancreatografía retrógrada endoscópica con esfinterotomía.",
+  "first_answered_option": "Colangiopancreatografía retrógrada endoscópica con esfinterotomía.",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 5: se trata de una mujer joven con clínica característica de colangitis.La causa de esta infección ha sido un cálculo biliar. En estos casos prima comenzar con la antibioterapia y el tratamiento de soporte y en los casos en los que el paciente muestre signos de no respuesta al tratamiento o gravedad realizar un drenaje de dicha vía biliar, para lo cual la CPRE es el método de elección. #tiritona, fiebre de 39ºC dolor en hipocondrio derecho, ictericia y vómitos#(apoya)# #Murphy positivo#(apoya)# #colelitiasis, coledocolitiasis y dilatación de la vía biliar extrahepática#(apoya)#      incorrecta 1: con la presentación clínica del caso, la via biliar debe ser drenada de manera urgente. En los casos de colangitis, la colecistectomía no es precisa en el momento agudo, se lleva a cabo de manera diferida y únicamente en algunos casos.#colelitiasis, coledocolitiasis y dilatación de la vía biliar extrahepática#(rechaza)#      incorrecta 2: no se debe realizar colecistectomía en el momento agudo ante una sospecha de colangitis#tiritona, fiebre de 39ºC dolor en hipocondrio derecho, ictericia y vómitos#(rechaza)#      incorrecta 3: el drenaje de la vía biliar externo se reserva como tratamiento paliativo en los que otras opciones terapéuticas no son posibles #49 años#(rechaza)##colelitiasis, coledocolitiasis y dilatación de la vía biliar extrahepática#(rechaza)#      incorrecta 4: podría ser útil canular el colédoco pero como hemos comentado, en el momento agudo la colecistectomía no está indicada#tiritona, fiebre de 39ºC dolor en hipocondrio derecho, ictericia y vómitos#(rechaza)#",
+  "first_argument_confidence": "60%",
+  "relations_raw": "(tiritona, support, 5)\n(fiebre de 39ºC, support, 5)\n(dolor en hipocondrio derecho, support, 5)\n(ictericia, support, 5)\n(vómitos, support, 5)\n(Murphy positivo, support, 5)\n(colelitiasis, support, 5)\n(coledocolitiasis, support, 5)\n(dilatación de la vía biliar, support, 5)\n(colelitiasis, attack, 1)\n(coledocolitiasis, attack, 1)\n(dilatación de la vía biliar extrahepática, attack, 1)\n(tiritona, attack, 2)\n(fiebre de 39ºC, attack, 2)\n(dolor en hipocondrio derecho, attack, 2)\n(ictericia, attack, 2)\n(vómitos, attack, 2)\n(49 años, attack, 3)\n(colelitiasis, attack, 3)\n(coledocolitiasis, attack, 3)\n(dilatación de la vía biliar extrahepática, attack, 3)\n(tiritona, attack, 4)\n(fiebre de 39ºC, attack, 4)\n(dolor en hipocondrio derecho, attack, 4)\n(ictericia, attack, 4)\n(vómitos, attack, 4)",
+  "evidence_relations": [
+    {
+      "evidence": "tiritona",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Colangiopancreatografía retrógrada endoscópica con esfinterotomía."
+    },
+    {
+      "evidence": "fiebre de 39ºC",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Colangiopancreatografía retrógrada endoscópica con esfinterotomía."
+    },
+    {
+      "evidence": "dolor en hipocondrio derecho",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Colangiopancreatografía retrógrada endoscópica con esfinterotomía."
+    },
+    {
+      "evidence": "ictericia",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Colangiopancreatografía retrógrada endoscópica con esfinterotomía."
+    },
+    {
+      "evidence": "vómitos",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Colangiopancreatografía retrógrada endoscópica con esfinterotomía."
+    },
+    {
+      "evidence": "Murphy positivo",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Colangiopancreatografía retrógrada endoscópica con esfinterotomía."
+    },
+    {
+      "evidence": "colelitiasis",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Colangiopancreatografía retrógrada endoscópica con esfinterotomía."
+    },
+    {
+      "evidence": "coledocolitiasis",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Colangiopancreatografía retrógrada endoscópica con esfinterotomía."
+    },
+    {
+      "evidence": "dilatación de la vía biliar",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Colangiopancreatografía retrógrada endoscópica con esfinterotomía."
+    },
+    {
+      "evidence": "colelitiasis",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Mantener tratamiento antibiótico y medidas de soporte con colecistectomía reglada posterior."
+    },
+    {
+      "evidence": "coledocolitiasis",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Mantener tratamiento antibiótico y medidas de soporte con colecistectomía reglada posterior."
+    },
+    {
+      "evidence": "dilatación de la vía biliar extrahepática",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Mantener tratamiento antibiótico y medidas de soporte con colecistectomía reglada posterior."
+    },
+    {
+      "evidence": "tiritona",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "Colecistectomía laparoscópica."
+    },
+    {
+      "evidence": "fiebre de 39ºC",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "Colecistectomía laparoscópica."
+    },
+    {
+      "evidence": "dolor en hipocondrio derecho",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "Colecistectomía laparoscópica."
+    },
+    {
+      "evidence": "ictericia",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "Colecistectomía laparoscópica."
+    },
+    {
+      "evidence": "vómitos",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "Colecistectomía laparoscópica."
+    },
+    {
+      "evidence": "49 años",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "Colocación de un drenaje biliar externo."
+    },
+    {
+      "evidence": "colelitiasis",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "Colocación de un drenaje biliar externo."
+    },
+    {
+      "evidence": "coledocolitiasis",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "Colocación de un drenaje biliar externo."
+    },
+    {
+      "evidence": "dilatación de la vía biliar extrahepática",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "Colocación de un drenaje biliar externo."
+    },
+    {
+      "evidence": "tiritona",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Colecistectomía urgente con canulación del colédoco."
+    },
+    {
+      "evidence": "fiebre de 39ºC",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Colecistectomía urgente con canulación del colédoco."
+    },
+    {
+      "evidence": "dolor en hipocondrio derecho",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Colecistectomía urgente con canulación del colédoco."
+    },
+    {
+      "evidence": "ictericia",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Colecistectomía urgente con canulación del colédoco."
+    },
+    {
+      "evidence": "vómitos",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Colecistectomía urgente con canulación del colédoco."
+    }
+  ],
+  "neutralized_argumentation": " The presented case involves a young woman with a characteristic clinical picture of cholangitis. This infection is due to a biliary calculus. In such cases, initial management includes antibiotic therapy and supportive care. When the patient shows signs of non-response to treatment or severity, percutaneous transhepatic biliary drainage (PTBD) is the preferred method for bile duct drainage.\n\nThe symptoms include right hypochondrial pain, fever of 39°C, jaundice, and vomiting. A positive Murphy's sign, gallstones, choledocholithiasis, and extrahepatic biliary duct dilatation support the diagnosis.\n\nIn emergency cases, immediate drainage of the bile duct may not be necessary as a cholecystectomy is usually delayed and only performed in some specific cases during the acute phase. External bile duct drainage is typically reserved as a palliative measure when other therapeutic options are not feasible. Canulating the common bile duct might be useful, but a cholecystectomy is still not indicated during the acute phase."
+}
+{
+  "specialization": "PSIQUIATRIA",
+  "case": "Hombre de 43 años fumador de 20 cigarrillos al día, que acude a su consulta llevado por un familiar, debido a que lleva 10 días durmiendo poco, menos de 3 horas al día sin referir cansancio por ello. Añade que ha empezado a gastar grandes cantidades de dinero, comprometiendo las finanzas familiares. Se encuentra verborreico, con aceleración del pensamiento y con apariencia megalomaníaca. Como antecedentes personales no hay enfermedades de interés salvo un episodio depresivo hace 5 años. No cree que le pase nada, pero ha aceptado acudir a la consulta con la intención de buscar ayuda para dejar de fumar. No hay consumo de otros tóxicos y la analítica y exploración neurològica no aportan datos anormales. En este paciente teniendo en cuenta su diagnóstico más probable, qué tratamiento sería el MENOS indicado:",
+  "options": [
+    "Bupropion.",
+    "Ácido valproico.",
+    "Carbonato de litio.",
+    "Risperidona.",
+    "Olanzapína."
+  ],
+  "correct_option": "Bupropion.",
+  "first_answered_option": "Bupropion.",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 1: se trata de un paciente que en el momento actual presenta clínica de episodio maniaco. En caso de utilizar el bupropion, fármaco que inhibe la recaptación de dopamina esta clínica podría exacerbarse #berborreico, con aceleración del pensamiento y con apariencia megalomaníaca#(apoya)      incorrecta 2: el ácido valproico es un estabilizador de ánimo, lo cual sería positivo para un paciente con un cuadro maniaco#verborreico, con aceleración del pensamiento y con apariencia megalomaníaca#(apoya)#      incorrecta 3:el carbonato de litio es un estabilizador de ánimo, lo cual sería positivo para un paciente con un cuadro maniaco#verborreico, con aceleración del pensamiento y con apariencia megalomaníaca#(apoya)#      incorrecta 4:la risperidona es un antipsicótico, lo cual sería positivo para un paciente con un cuadro maniaco#verborreico, con aceleración del pensamiento y con apariencia megalomaníaca#(apoya)#      incorrecta 5:la olanzapina es un antipsicótico, lo cual sería positivo para un paciente con un cuadro maniaco#verborreico, con aceleración del pensamiento y con apariencia megalomaníaca#(apoya)#",
+  "first_argument_confidence": "100%",
+  "relations_raw": "(berborreico, support, 1)\n(aceleración del pensamiento, support, 1)\n(apariencia megalomaníaca, support, 1)\n(verborreico, support, 2)\n(aceleración del pensamiento, support, 2)\n(apariencia megalomaníaca, support, 2)\n(verborreico, support, 3)\n(aceleración del pensamiento, support, 3)\n(apariencia megalomaníaca, support, 3)\n(verborreico, support, 4)\n(aceleración del pensamiento, support, 4)\n(apariencia megalomaníaca, support, 4)\n(verborreico, support, 5)\n(aceleración del pensamiento, support, 5)\n(apariencia megalomaníaca, support, 5)",
+  "evidence_relations": [
+    {
+      "evidence": "berborreico",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Bupropion."
+    },
+    {
+      "evidence": "aceleración del pensamiento",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Bupropion."
+    },
+    {
+      "evidence": "apariencia megalomaníaca",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Bupropion."
+    },
+    {
+      "evidence": "verborreico",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Ácido valproico."
+    },
+    {
+      "evidence": "aceleración del pensamiento",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Ácido valproico."
+    },
+    {
+      "evidence": "apariencia megalomaníaca",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Ácido valproico."
+    },
+    {
+      "evidence": "verborreico",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Carbonato de litio."
+    },
+    {
+      "evidence": "aceleración del pensamiento",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Carbonato de litio."
+    },
+    {
+      "evidence": "apariencia megalomaníaca",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Carbonato de litio."
+    },
+    {
+      "evidence": "verborreico",
+      "relation": " support",
+      "claim_num": 4,
+      "claim": "Risperidona."
+    },
+    {
+      "evidence": "aceleración del pensamiento",
+      "relation": " support",
+      "claim_num": 4,
+      "claim": "Risperidona."
+    },
+    {
+      "evidence": "apariencia megalomaníaca",
+      "relation": " support",
+      "claim_num": 4,
+      "claim": "Risperidona."
+    },
+    {
+      "evidence": "verborreico",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Olanzapína."
+    },
+    {
+      "evidence": "aceleración del pensamiento",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Olanzapína."
+    },
+    {
+      "evidence": "apariencia megalomaníaca",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Olanzapína."
+    }
+  ],
+  "neutralized_argumentation": " The patient currently exhibits symptoms of a manic episode, characterized by accelerated thinking and megalomaniacal behavior. In this situation, the use of bupropion, a drug that inhibits dopamine reuptake, may exacerbate these symptoms due to its stimulatory effect (supported by evidence).\n\nOn the other hand, valproic acid, lithium carbonate, risperidone, and olanzapine are typically used as mood stabilizers or antipsychotics, which could be beneficial for a patient with a manic episode, given their ability to manage symptoms of accelerated thinking and megalomaniacal behavior."
+}

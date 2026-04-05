@@ -1,0 +1,162 @@
+{
+  "specialization": "CARDIOLOGÍA",
+  "case": "A 47-year-old patient who consults with the Emergency Service for a sudden loss of consciousness. Which of the following, has a higher diagnostic performance?:",
+  "options": [
+    "Medical history.",
+    "Electrocardiogram.",
+    "Holter registration.",
+    "Electroencephalogram.",
+    "Skull CT."
+  ],
+  "correct_option": "Historia clínica.",
+  "first_answered_option": "Historia clínica.",
+  "answered_option_confidence": "100%",
+  "first_argument": "- Option 1 correct: #clinical history# is the most important and useful element to reach the diagnosis of a patient and ask us about the element with #higher diagnostic performance#. Therefore, we will have to perform this before performing any complementary test - Option 2 incorrect: although a @electrocardiogram@ is a fundamental test in the study of a sudden loss of consciousness we are asked about the element with @higher diagnostic performance@, and this is the clinical history - Options 3, 4 and 5 incorrect: the @Registro Holter@, @Electroencephalogram@ and @CT skull@ are more specific tests in the study of loss of consciousness and should therefore be carried out in a more targeted way when there is a specific suspicion. the element with @higher diagnostic performance@",
+  "first_argument_confidence": "100%",
+  "corrected_argument": null,
+  "relations_raw": "(historia clínica, support, 1)\n(mayor rendimiento diagnóstico, support, 1)\n(electrocardiograma, attack, 2)\n(mayor rendimiento diagnóstico, attack, 2)\n(Registro Holter, attack, 3)\n(Electroencefalograma, attack, 4)\n(TC de cráneo, attack, 5)\n(mayor rendimiento diagnóstico, attack, 3)\n(mayor rendimiento diagnóstico, attack, 4)\n(mayor rendimiento diagnóstico, attack, 5)",
+  "evidence_relations": [
+    {
+      "evidence": "historia clínica",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Historia clínica."
+    },
+    {
+      "evidence": "mayor rendimiento diagnóstico",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Historia clínica."
+    },
+    {
+      "evidence": "electrocardiograma",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "Electrocardiograma."
+    },
+    {
+      "evidence": "mayor rendimiento diagnóstico",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "Electrocardiograma."
+    },
+    {
+      "evidence": "Registro Holter",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "Registro Holter."
+    },
+    {
+      "evidence": "Electroencefalograma",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Electroencefalograma."
+    },
+    {
+      "evidence": "TC de cráneo",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "TC de cráneo."
+    },
+    {
+      "evidence": "mayor rendimiento diagnóstico",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "Registro Holter."
+    },
+    {
+      "evidence": "mayor rendimiento diagnóstico",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Electroencefalograma."
+    },
+    {
+      "evidence": "mayor rendimiento diagnóstico",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "TC de cráneo."
+    }
+  ],
+  "neutralized_argumentation": "A comprehensive clinical history will help guide further diagnostics to reach an accurate diagnosis for this patient, as it provides essential details about their symptoms and circumstances leading up to losing consciousness. While additional tests may be warranted depending on the specific presentation, a thorough clinical history is always the first step in diagnostic reasoning."
+}
+{
+  "specialization": "DIGESTIVO",
+  "case": "A 55-year-old man, father of a celiac son, with iron deficiency anemia and recent increase in depositional rhythm, has been made a negative determination of the alleles HLA-DQ2 and HLA-DQ8. Which diagnostic study is the most appropriate in this case?:",
+  "options": [
+    "Determination of antibodies to transglutaminase IgA.",
+    "High digestive endoscopy with duodenal biopsies.",
+    "D-xylose test.",
+    "Evaluate the response to gluten-free diet.",
+    "Colonoscopy."
+  ],
+  "correct_option": "Colonoscopia.",
+  "first_answered_option": "Colonoscopia.",
+  "answered_option_confidence": "100%",
+  "first_argument": "Option 5 correct: we are told of a middle-aged male (#55 years#) with ferropenic #anemia# and #recent increase in depositional rhythm#. The first thing to rule out is the presence of colon neoplasia. In addition, we are told that #HLA-DQ2 and HLA-DQ8 have turned out to be negative#, which makes it very unlikely to be a celiac. The rest of the options are aimed at diagnosing a celiac, but because of the above mentioned is not the most @appropriate@ (@55 years@ @anemia ferropénica@ @new increase in depositional rhythm@ @HLA-DQ2 and HLA-DQ8 that has turned out negative@)",
+  "first_argument_confidence": "100%",
+  "corrected_argument": null,
+  "relations_raw": "(55 años, support, 5)\n(anemia ferropénica, support, 5)\n(aumento reciente del ritmo deposicional, support, 5)\n(HLA-DQ2, attack, 5)\n(HLA-DQ8, attack, 5)\n\n(55 años, attack, 5)\n(anemia ferropénica, attack, 5)\n(aumento reciente del ritmo deposicional, attack, 5)\n(HLA-DQ2, attack, 5)\n(HLA-DQ8, attack, 5)\n",
+  "evidence_relations": [
+    {
+      "evidence": "55 años",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Colonoscopia."
+    },
+    {
+      "evidence": "anemia ferropénica",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Colonoscopia."
+    },
+    {
+      "evidence": "aumento reciente del ritmo deposicional",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Colonoscopia."
+    },
+    {
+      "evidence": "HLA-DQ2",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Colonoscopia."
+    },
+    {
+      "evidence": "HLA-DQ8",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Colonoscopia."
+    },
+    {
+      "evidence": "55 años",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Colonoscopia."
+    },
+    {
+      "evidence": "anemia ferropénica",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Colonoscopia."
+    },
+    {
+      "evidence": "aumento reciente del ritmo deposicional",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Colonoscopia."
+    },
+    {
+      "evidence": "HLA-DQ2",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Colonoscopia."
+    },
+    {
+      "evidence": "HLA-DQ8",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Colonoscopia."
+    }
+  ],
+  "neutralized_argumentation": "This patient presents with ferropenic anemia and a recent increase in depositional rhythm. The presence of colon neoplasia needs to be ruled out, and given the negativity for HLA-DQ2 and DQ8, it is unlikely to be celiac disease. The most appropriate diagnosis would therefore be...?\n"
+}

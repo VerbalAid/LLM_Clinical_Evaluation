@@ -1,0 +1,178 @@
+{
+  "specialization": "CARDIOLOGÍA",
+  "case": "Hombre de 32 años de edad sin antecedentes de interés ni factores de riesgo cardiovascular. Clínica de disnea al subir un piso de escaleras de 1 mes de evolución. Consulta por síncope brusco precedido de esfuerzo. Antecedentes familiares de muerte no explicada de forma brusca en su hermano. En la exploración física destaca un soplo sistólico rudo más audible en foco aórtico. El electrocardiograma practicado en consulta muestra un ritmo sinusal con patrón compatible de hipertrofia de ventricular izquierda. Se realiza un ecocardiograma que documenta una importante hipertrofia asimétrica de septo interventricular con un gradiente dinámico subvalvular de 70 mmHg con insuficiencia mitral secundaria moderada y fracción de eyección de ventrículo izquierdo conservada. ¿Qué opción terapéutica es la MENOS indicada?",
+  "options": [
+    "Beta-bloqueantcs.",
+    "Digoxina.",
+    "Calcio-antagonistas no dihidropiridínicos.",
+    "Desfibrilador automático implantable.",
+    "Miomectomía septal quirúrgica de Morrow."
+  ],
+  "correct_option": "Digoxina.",
+  "first_answered_option": "Digoxina.",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 2: se trata de un paciente con una sospecha de miocardiopatía hipertrófica #hipertrofia de ventricular izquierda#(apoya)# #disnea#(apoya)# #síncope brusco precedido de esfuerzo#(apoya)# por lo que cualquier fármaco con efecto inotrópico estaría contraindicado, como pasa con la digoxina.      incorrecta 1: ante una sospecha de miocardiopatóia hipertrófica que compromete al paciente está indicado el uso de beta bloqueantes#hipertrofia de ventricular izquierda#(rechaza)# #disnea#(rechaza)# #síncope brusco precedido de esfuerzo#(rechaza)#      incorrecta 3:ante una sospecha de miocardiopatóia hipertrófica que compromete al paciente está indicado el uso de calcio antagonistas#hipertrofia de ventricular izquierda#(rechaza)# #disnea#(rechaza)# #síncope brusco precedido de esfuerzo#(rechaza)#      incorrecta 4: ante sospecha de MCH con antecedentes familiares de muerte súbita, estaría indicada la implantación de un desfibrilador automático #hipertrofia de ventricular izquierda#(rechaza)# #disnea#(rechaza)# #síncope brusco precedido de esfuerzo#(rechaza)# #Antecedentes familiares de muerte no explicada de forma brusca#(rechaza)#      incorrecta 5: la miomectomía del septo puede estar indicada en este caso ante la sospecha de MCH con un gradiente dinámico subvalvular elevado#hipertrofia de ventricular izquierda#(rechaza)# #disnea#(rechaza)# #síncope brusco precedido de esfuerzo#(rechaza)# #gradiente dinámico subvalvular de 70 mmHg#(rechaza)#",
+  "first_argument_confidence": "80%",
+  "relations_raw": "(hipertrofia de ventricular izquierda, support, 2)\n(disnea, support, 2)\n(síncope brusco precedido de esfuerzo, support, 2)\n(hipertrofia de ventricular izquierda, attack, 1)\n(disnea, attack, 1)\n(síncope brusco precedido de esfuerzo, attack, 1)\n(hipertrofia de ventricular izquierda, attack, 3)\n(disnea, attack, 3)\n(síncope brusco precedido de esfuerzo, attack, 3)\n(hipertrofia de ventricular izquierda, attack, 4)\n(disnea, attack, 4)\n(síncope brusco precedido de esfuerzo, attack, 4)\n(Antecedentes familiares de muerte no explicada de forma brusca, attack, 4)\n(hipertrofia de ventricular izquierda, attack, 5)\n(disnea, attack, 5)\n(síncope brusco precedido de esfuerzo, attack, 5)\n(gradiente dinámico subvalvular de 70 mmHg, attack, 5)",
+  "evidence_relations": [
+    {
+      "evidence": "hipertrofia de ventricular izquierda",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Digoxina."
+    },
+    {
+      "evidence": "disnea",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Digoxina."
+    },
+    {
+      "evidence": "síncope brusco precedido de esfuerzo",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Digoxina."
+    },
+    {
+      "evidence": "hipertrofia de ventricular izquierda",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Beta-bloqueantcs."
+    },
+    {
+      "evidence": "disnea",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Beta-bloqueantcs."
+    },
+    {
+      "evidence": "síncope brusco precedido de esfuerzo",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Beta-bloqueantcs."
+    },
+    {
+      "evidence": "hipertrofia de ventricular izquierda",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "Calcio-antagonistas no dihidropiridínicos."
+    },
+    {
+      "evidence": "disnea",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "Calcio-antagonistas no dihidropiridínicos."
+    },
+    {
+      "evidence": "síncope brusco precedido de esfuerzo",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "Calcio-antagonistas no dihidropiridínicos."
+    },
+    {
+      "evidence": "hipertrofia de ventricular izquierda",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Desfibrilador automático implantable."
+    },
+    {
+      "evidence": "disnea",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Desfibrilador automático implantable."
+    },
+    {
+      "evidence": "síncope brusco precedido de esfuerzo",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Desfibrilador automático implantable."
+    },
+    {
+      "evidence": "Antecedentes familiares de muerte no explicada de forma brusca",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Desfibrilador automático implantable."
+    },
+    {
+      "evidence": "hipertrofia de ventricular izquierda",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Miomectomía septal quirúrgica de Morrow."
+    },
+    {
+      "evidence": "disnea",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Miomectomía septal quirúrgica de Morrow."
+    },
+    {
+      "evidence": "síncope brusco precedido de esfuerzo",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Miomectomía septal quirúrgica de Morrow."
+    },
+    {
+      "evidence": "gradiente dinámico subvalvular de 70 mmHg",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Miomectomía septal quirúrgica de Morrow."
+    }
+  ],
+  "neutralized_argumentation": " In a middle-aged male patient with a history of family sudden unexplained death and symptoms of left ventricular hypertrophy (LVH), including dyspnea, syncope following exertion, and a possible dynamic subvalvular gradient of 70 mmHg, the primary diagnostic consideration is likely to be hypertrophic cardiomyopathy (HCM).\nThe patient's symptoms and familial history align with the criteria for HCM, while the presence of LVH on examination provides supporting evidence #hipertrofia de ventricular izquierda#(apoya)#.\nA dynamic subvalvular gradient may suggest obstruction related to HCM, but this would not be indicated for treatment with a surgical septal myomectomy #miomectomía septal quirúrgica de Morrow#(rechaza).\nIn this case, the beta-blockers, digoxin, non-dihydropyridine calcium antagonists, or an implantable cardioverter-defibrillator (ICD) would be contraindicated due to their inotropic effects that may exacerbate the underlying HCM and its symptoms #hipertrofia de ventricular izquierda#(rechaza)# #disnea#(rechaza)# #síncope brusco precedido de esfuerzo#(rechaza).\nOption 1: Beta-blockers would not be appropriate in this case due to their potential exacerbation of the underlying HCM and its symptoms.\nOption 3: Calcium antagonists, particularly non-dihydropyridine types, should also be avoided in this context because of the risk of worsening HCM and its associated symptoms.\nOption 4: An ICD may not be indicated in this case, as it is primarily used for preventing sudden cardiac death in patients with established HCM and high-risk features. The absence of a clear family history of sudden unexplained deaths suggests that the patient does not yet fit this criteria #Antecedentes familiares de muerte no explicada de forma brusca#(rechaza).\nOption 5: Although a surgical septal myomectomy could potentially alleviate symptoms in some cases of HCM with an elevated subvalvular gradient, it would not be the primary treatment for this patient given the presence of dyspnea, syncope following exertion, and a familial history of sudden unexplained death.\nIn summary, based on the patient's symptoms and family history, a diagnosis of hypertrophic cardiomyopathy is most likely, making beta-blockers, digoxin, non-dihydropyridine calcium antagonists, an ICD, and surgical septal myomectomy contraindicated or inappropriate."
+}
+{
+  "specialization": "PEDIATRÍA",
+  "case": "Niña de 2 meses de edad que se remite a la consulta de urología infantil por presentar reflujo vésico-ureteral bilateral grado III. Antecedentes: diagnóstico prenatal de ectasia piélica bilateral. Pielonefritis aguda, al mes de vida, tras la realización de la cistouretrografía diagnóstica. De las siguientes opciones, ¿cuál sería la indicación más recomendable?",
+  "options": [
+    "No hacer nada",
+    "ya que el reflujo puede desaparecer de forma espontánea.",
+    "Tratamiento endoscópico del reflujo.",
+    "Solicitar gammagrafía renal (DMSA) y realizar un urocultivo mensual.",
+    "Profilaxis antibiótica con amoxicilina y solicitar gammagrafía renal (DMSA)."
+  ],
+  "correct_option": "Profilaxis antibiótica con amoxicilina y solicitar gammagrafía renal (DMSA).",
+  "first_answered_option": "Profilaxis antibiótica con amoxicilina y solicitar gammagrafía renal (DMSA).",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 4: se trata de una paciente de 2 meses con un diagnóstico de reflujo vésico-ureteral bilateral grado III. Ante este diagnóstico es necesario realizar una DMSA, una gammagrafía que es capaz de diagnosticar si existe daño renal asociado. Teniendo en cuenta que se trata de una niña de 2 meses de edad que ya ha padecido un episodio de pielonefritis aguda y a la espera de realizar el resto de pruebas para corroborar si precisa de tratamiento quirúrgico o no, será necesario el inicio de antibiótico profiláctico. #Niña de 2 meses# #vésico-ureteral bilateral grado III# #Pielonefritis aguda#      incorrecta 1: el reflujo puede ser de diferentes grados y algunos de ellos, los de menor grado, pueden llegar a resolverse solos. Pero, esta paciente presenta un reflujo de grado III, el cual tiene una menor tasa de resolución espontánea, por lo que la actitud expectante no será adecuada. @vésico-ureteral bilateral grado III@      incorrecta 2: no todos los reflujos precisan de cirugía correctora desde un inicio, convendría ampliar estudio@vésico-ureteral bilateral grado III@      incorrecta 3: como hemos comentado en la respuesta correcta, esta paciente ya ha padecido una pielonefritis, por lo cual tiene indicación de comenzar directamente con antibioterapia, sin precisar realización de urocultivos mensuales@vésico-ureteral bilateral grado III@",
+  "first_argument_confidence": "100%",
+  "relations_raw": "(Niña de 2 meses, support, 4)\n(vésico-ureteral bilateral grado III, support, 4)\n(Pielonefritis aguda, support, 4)\n(vésico-ureteral bilateral grado III, attack, 1)\n(vésico-ureteral bilateral grado III, attack, 2)\n(vésico-ureteral bilateral grado III, attack, 3)",
+  "evidence_relations": [
+    {
+      "evidence": "Niña de 2 meses",
+      "relation": " support",
+      "claim_num": 4,
+      "claim": "Solicitar gammagrafía renal (DMSA) y realizar un urocultivo mensual."
+    },
+    {
+      "evidence": "vésico-ureteral bilateral grado III",
+      "relation": " support",
+      "claim_num": 4,
+      "claim": "Solicitar gammagrafía renal (DMSA) y realizar un urocultivo mensual."
+    },
+    {
+      "evidence": "Pielonefritis aguda",
+      "relation": " support",
+      "claim_num": 4,
+      "claim": "Solicitar gammagrafía renal (DMSA) y realizar un urocultivo mensual."
+    },
+    {
+      "evidence": "vésico-ureteral bilateral grado III",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "No hacer nada"
+    },
+    {
+      "evidence": "vésico-ureteral bilateral grado III",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "ya que el reflujo puede desaparecer de forma espontánea."
+    },
+    {
+      "evidence": "vésico-ureteral bilateral grado III",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "Tratamiento endoscópico del reflujo."
+    }
+  ],
+  "neutralized_argumentation": " In a 2-month-old child with a confirmed grade III bilateral vesico-ureteral reflux, the appropriate initial management should be a combination of antibiotic prophylaxis and a DMSA renal scan.\n\nThe diagnosis of a high-grade bilateral vesico-ureteral reflux carries an increased risk of complications such as pyelonephritis, which this child has already experienced in the past. As a result, starting antibiotic prophylaxis is critical to prevent further recurrences and potential kidney damage.\n\nThe DMSA scan is essential for detecting any associated renal scarring or damage that may have occurred as a result of the reflux or previous pyelonephritis episodes. This information will be crucial in determining if surgical intervention becomes necessary later on.\n\nOption 1: Expectant management of the reflux since it may resolve spontaneously is not advisable, given the high-grade nature of the reflux in this patient, which has a lower rate of spontaneous resolution #vésico-ureteral bilateral grado III#.\n\nOption 2: Not all cases of vesico-ureteral reflux require immediate surgical intervention. However, in this case, additional studies are needed to establish the optimal management strategy for this child, including the potential need for surgery #vésico-ureteral bilateral grado III#.\n\nOption 3: Although antibiotics and urocultures may play a role in the long-term management of vesico-ureteral reflux, starting antibiotic prophylaxis without first performing a DMSA scan is premature, as it does not address the potential for associated kidney damage #vésico-ureteral bilateral grado III#."
+}

@@ -1,0 +1,81 @@
+{
+  "specialization": "GINECOLOGÍA",
+  "case": "Una mujer de 26 años acude a Urgencias por dolor abdominal y escasas pérdidas hemáticas vaginales. Refiere una amenorrea de 7 semanas. Le realiza un test de embarazo, con resultado positivo. ¿Cuál es el siguiente paso?",
+  "options": [
+    "Realizar un examen ecográfico vaginal.",
+    "Recomendar reposo domiciliario y repetir el test de embarazo en una semana.",
+    "Evacuar el útero mediante legrado por aspiración.",
+    "Pautar progesterona natural micronizada por vía vaginal hasta la semana 14 de gestación.",
+    "Evacuar el útero mediante la administración intravaginal de prostaglandinas."
+  ],
+  "correct_option": "Realizar un examen ecográfico vaginal.",
+  "first_answered_option": "Realizar un examen ecográfico vaginal.",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 1: nos preguntan por la actitud a seguir en una paciente en la que aun no tenemos un diagnóstico concreto. se trata de una gestante de 7 semanas #amenorrea de 7 semanas# #test de embarazo, con resultado positivo# que ha tenido un sangrado #escasas pérdidas hemáticas# . Por ello, no podemos/debemos adoptar una actitud terapéutica hasta conocer de qué hemorragia del primer trimestre se trata. Para ello el primer paso será realizar una ecografía vaginal, mediante la cual podremos distinguir entre posibles entidades (aborto completo, incompleto, amenaza de aborto ...)      incorrectas 2,3,4,5: POR DESCARTE. Todas implican adoptar actitud terapéutica sin haber llegado a un diagnóstico.",
+  "first_argument_confidence": "100%",
+  "relations_raw": "(amenorrea de 7 semanas, support, 1)\n(test de embarazo, support, 1)\n(resultado positivo, support, 1)\n(escasas pérdidas hemáticas, support, 1)\n(None)",
+  "evidence_relations": [
+    {
+      "evidence": "amenorrea de 7 semanas",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Realizar un examen ecográfico vaginal."
+    },
+    {
+      "evidence": "test de embarazo",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Realizar un examen ecográfico vaginal."
+    },
+    {
+      "evidence": "resultado positivo",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Realizar un examen ecográfico vaginal."
+    },
+    {
+      "evidence": "escasas pérdidas hemáticas",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Realizar un examen ecográfico vaginal."
+    }
+  ],
+  "neutralized_argumentation": "### Clinical Consideration\n\nWhen providing care to a pregnant patient who does not yet have a definitive diagnosis of amniotic fluid embolism (AFE) at 7 weeks gestational age, it is essential to adopt a non-therapeutic approach until a specific etiology for the hemoperitoneum can be determined. The first step in addressing this situation is performing an ultrasound examination via vaginal palpation.\n\n### Diagnostic Context\n\nThe patient presents with acute abdominal pain and abnormal uterine bleeding (escasas pérdidas hemáticas). These symptoms are commonly associated with amniotic fluid embolism, which typically occurs during the second trimester. Without a definitive diagnosis, it is important not to initiate therapeutic interventions immediately.\n\n### Clinical Decision\n\nGiven that no specific cause for the abdominal pain and hemorrhage has been identified yet, the next step should be:\n\n1. **Performing an Ultrasound Examination via Vaginal Palpation:**\n   - This examination will help differentiate between possible causes of hemoperitoneum in early pregnancy.\n     2. **Abortio Completo (Complete Abortion):** An ultrasound might show a completely emptied uterus with no fetal heartbeat, suggesting the patient is experiencing an abortion without any complications.\n     3. **Abortio Incompleto (Incomplete Abortion):** This would manifest as reduced but not fully emptyed uterus, indicating some retained products of conception.\n     4. **Amenorrea de 7 semanas:** Although this term typically refers to amenorrhea in early pregnancy due to the presence of amniotic fluid embolism, it is important to rule out other causes such as an ectopic pregnancy or a missed abortion.\n\n### Preventive Steps\n\n- **Avoiding Therapeutic Interventions Until Diagnosis:**\n  - While providing supportive care and monitoring her condition is essential, taking definitive action should be delayed until the specific cause of the hemoperitoneum can be determined through further diagnostic methods.\n  \n### Conclusion\n\nIn summary, a non-therapeutic approach is warranted during this time. It is crucial to avoid any form of intervention without a clear diagnosis while ensuring continuous monitoring and supportive care."
+}
+{
+  "specialization": "NEFROLOGÍA",
+  "case": "Un hombre de 57 años acude a su consulta buscando información sobre el tratamiento quirúrgico de los síntomas del tracto urinario inferior secundarios a crecimiento prostático. Usted tiene que proporcionarle consejo al respecto. ¿Cuál de los siguientes mensajes es cierto?",
+  "options": [
+    "Entre las indicaciones absolutas para la cirugía por síntomas del tracto urinario inferior secundarios a crecimiento prostático están las infecciones urinarias de repetición, la litiasis vesical y la hematuria recidivante.",
+    "Los stents prostáticos constituyen una opción de tratamiento mínimamente invasivo muy interesante para hombres jóvenes con escasos síntomas del tracto urinario inferior secundarios a crecimiento prostático.",
+    "El paciente intervenido quirúrgicamente por síntomas del tracto urinario inferior secundarios a crecimiento prostático precisa de un seguimiento muy exhaustivo, con controles cada tres meses durante el primer año y cada seis meses a partir de entonces.",
+    "Lamentablemente, la disfunción eréctil es la norma tras el tratamiento quirúrgico por síntomas del tracto urinario inferior secundarios a crecimiento prostático."
+  ],
+  "correct_option": "Entre las indicaciones absolutas para la cirugía por síntomas del tracto urinario inferior secundarios a crecimiento prostático están las infecciones urinarias de repetición, la litiasis vesical y la hematuria recidivante.",
+  "first_answered_option": "Entre las indicaciones absolutas para la cirugía por síntomas del tracto urinario inferior secundarios a crecimiento prostático están las infecciones urinarias de repetición, la litiasis vesical y la hematuria recidivante.",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 1: las nombradas en la opción 1 son las indicaciones absolutas para la realización de la cirugía de hiperplasia prostática. #síntomas del tracto urinario inferior secundarios a crecimiento prostático#      incorrecta 2: la opción terapéutica con stents no sería adecuada para este paciente por su edad y aun incipiente sintomatología @57 años@      incorrecta 3: el paciente que únicamente presenta crecimiento prostático (al tratarse de hiperplasia prostática BENIGNA) no precisará un estrecho control como el que se propone en esta opción @crecimiento prostático@      incorrecta 4: la cirugía prostática para resulción de síntomas de tracto urinario tiene poco riesgo de disfunción erectil.",
+  "first_argument_confidence": "100%",
+  "relations_raw": "(síntomas del tracto urinario inferior secundarios a crecimiento prostático, support, 1)\n(57 años, attack, 2)\n(crecimiento prostático, attack, 3)\n(None)",
+  "evidence_relations": [
+    {
+      "evidence": "síntomas del tracto urinario inferior secundarios a crecimiento prostático",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Entre las indicaciones absolutas para la cirugía por síntomas del tracto urinario inferior secundarios a crecimiento prostático están las infecciones urinarias de repetición, la litiasis vesical y la hematuria recidivante."
+    },
+    {
+      "evidence": "57 años",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "Los stents prostáticos constituyen una opción de tratamiento mínimamente invasivo muy interesante para hombres jóvenes con escasos síntomas del tracto urinario inferior secundarios a crecimiento prostático."
+    },
+    {
+      "evidence": "crecimiento prostático",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "El paciente intervenido quirúrgicamente por síntomas del tracto urinario inferior secundarios a crecimiento prostático precisa de un seguimiento muy exhaustivo, con controles cada tres meses durante el primer año y cada seis meses a partir de entonces."
+    }
+  ],
+  "neutralized_argumentation": "Las indicaciones absolutas para una cirugía de hiperplasia prostática son:\n\n1. **Sintomas graves** o **síntomas persistentes** que empañan la vida diaria y no responden a tratamientos alternativos, como los esteroides prostaticos.\n2. **Toma de decisiones** basadas en un diagnóstico precisa del cáncer prostático.\n\nEsta cirugía debe realizarse cuando:\n\n1. La paciente presenta síntomas que afectan significativamente su calidad de vida.\n2. Algunas pruebas como la resonancia magnética o la ultraondulación pueden confirmar el tamaño y la presencia de cambios en el prostatismo, evidenciando un crecimiento prostatico notorio.\n\nEn resumen:\n- Síntomas graves del tracto urinario inferior.\n- Crecimiento prostático visible u obvio por técnicas diagnósticas más avanzadas.\n- Práctica cuidadosa en la selección de pacientes y cirugía efectiva.\n\n### Razones para rechazar las opciones:\n\n1. **Incorrecta opción 2**: La cirugía de hiperplasia prostática BENIGNA requiere un estrecho control hormonal debido a su naturaleza benigna, no se trata simplemente de la realización de una cirugía.\n   \n   Racionalidad: Este tipo de enfermedad requiere seguimiento médico continuo para prevenir complicaciones y manejarse correctamente.\n\n2. **Incorrecta opción 3**: Aunque la crecimiento prostático es benigno, no implica que se puede descartar completamente los riesgos asociados con la cirugía de hiperplasia prostática.\n   \n   Racionalidad: La cirugía para resolver síntomas de trato urinario se asocia generalmente con un alto porcentaje de resultados satisfactorios y una pequeña pero significativa disfunción erectil.\n\n3. **Incorrecta opción 4**: Se puede hacer que la cirugía prostática sea más segura, especialmente si el paciente presenta riesgo aumentado debido a factores de edad o patrones familiares asociados con cáncer.\n   \n   Racionalidad: La cirugía de prostatismo es más segura y efectiva en personas jóvenes y sin patrones familiares cancerosos.\n\nEn conclusión, la correcta opción se basa en el diagnóstico precisamente del crecimiento prostático, lo que requiere un tratamiento cuidadoso como una cirugía efectiva para mejorar la calidad de vida y evitar complicaciones."
+}

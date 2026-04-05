@@ -1,0 +1,180 @@
+{
+  "specialization": "NEUROLOGÍA",
+  "case": "A 56-year-old patient with no personal or family history of interest is studied for having difficulty walking with the right leg for 6 months. It does not mention other symptoms. The examination shows a weakness 4/5 for dorsal flexion and foot version and 4/5 for bending and inversion of the foot, with muscle reflexes increased and Babinski present, being the rest normal. The syndromic diagnosis would be:",
+  "options": [
+    "Right common peroneum N mononeuropathy.",
+    "Focal affectation of first and probable second motoneurone.",
+    "Right hemimedular affectation (Brown-Sequard).",
+    "Multiple mononeuropathy with involvement of common peroneum N and right posterior tibial.",
+    "Right lumbar plexopathy."
+  ],
+  "correct_option": "Afectación focal de primera motoneurona y probable de segunda.",
+  "first_answered_option": "Afectación focal de primera motoneurona y probable de segunda.",
+  "answered_option_confidence": "100%",
+  "first_argument": "- Option 2 correct: we are told that the patient has #weakness 4/5 for dorsal flexion and foot eversion and 4/5 for flexion and foot reversal# unilaterally (#right leg#) so it guides us to the patient having a problem with motor neurons and being restricted to the distal muscles of the right leg most likely is that the problem is focal #Focal affectation of first and probable second # . In addition, the fact that he presents #enhanced muscle reflexes# and #Babinski present# leads us to the first motor neuron being damaged. We do not suspect injury in other parts of the spinal cord or peripheral nerves as we are told that he does not have other neurological symptoms (#He does not refer to other symptoms# being the normal rest#) - Option 1 incorrect: if a peripheral nerve such as the common peroneal nerve was affected in addition to motor symptoms, it would present sensitive symptoms (@Not referring to other symptoms@ @being the rest normal@). On the other hand, the involvement of a peripheral nerve (on its motor side) is considered to be an affectation of second motoneurone and, therefore, we would not expect to find increased #muscle reflexes# and #Babinski present#. In addition, with the involvement of the common peroneal nerve, only the dorsal flexion of the foot would be affected (not other movements: @feet reversal@ @flexion and foot reversal@). - Option 3 incorrect: in case it is a right hemimedular @affectation (Brown-Sequard)@ we would expect to find motor dysfunction on one side of the body below the medullary level (this data could correspond to the case analyzed if the spinal cord injury is low), associated with deficit of proprioception (positional sensitivity) and sensitivity of vibration on the same side and deficiency of thermal sensation and pain (thermalalgesic sensitivity) on the opposite side. In the case analyzed the patient presents only motor symptoms so it would not be expected that there would be a right hemimedular involvement (Brown-Sequard) (@Not referring to other symptoms@ @being the rest normal@) - Option 4 incorrect: same reasoning as option 1. - Option 5 incorrect: if the lumbar plexus were in addition to motor symptoms it would present sensory symptoms (@Not referring to other symptoms@being the rest normal@) since the plexus is a set of nerves, which On the other hand, the affectation of a plexus (on its motor side) is considered to be an affectation of second motoneurone and therefore we would not expect to find #enhanced muscle reflexes# and #Babinski present#.In addition to the lumbar plexus affectation it would not be clinical only on the distal part of the leg but the lower extremity would be affected in its entirety (from the thigh).",
+  "first_argument_confidence": "80%",
+  "corrected_argument": null,
+  "relations_raw": "(debilidad 4/5 para la flexión dorsal y eversión del pie, support, 2)\n(debilidad 4/5 para la flexión e inversión del pie, support, 2)\n(pierna derecha, support, 2)\n(Afectación focal de primera motoneurona y probable de segunda, support, 2)\n(reflejos musculares aumentados, support, 2)\n(Babinski presente, support, 2)\n(No refiere otros síntomas, support, 2)\n(siendo el resto normal, support, 2)\n(No refiere otros síntomas, attack, 1)\n(siendo el resto normal, attack, 1)\n(reflejos musculares aumentados, attack, 1)\n(Babinski presente, attack, 1)\n(eversión del pie, attack, 1)\n(flexión e inversión del pie, attack, 1)\n\n(afectación hemimedular derecho, attack, 3)\n(No refiere otros síntomas, attack, 3)\n(siendo el resto normal, attack, 3)\n(None)\n(No refiere otros síntomas, attack, 5)\n(siendo el resto normal, attack, 5)\n(reflejos musculares aumentados, attack, 5)\n(Babinski presente, attack, 5)",
+  "evidence_relations": [
+    {
+      "evidence": "debilidad 4/5 para la flexión dorsal y eversión del pie",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Afectación focal de primera motoneurona y probable de segunda."
+    },
+    {
+      "evidence": "debilidad 4/5 para la flexión e inversión del pie",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Afectación focal de primera motoneurona y probable de segunda."
+    },
+    {
+      "evidence": "pierna derecha",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Afectación focal de primera motoneurona y probable de segunda."
+    },
+    {
+      "evidence": "Afectación focal de primera motoneurona y probable de segunda",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Afectación focal de primera motoneurona y probable de segunda."
+    },
+    {
+      "evidence": "reflejos musculares aumentados",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Afectación focal de primera motoneurona y probable de segunda."
+    },
+    {
+      "evidence": "Babinski presente",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Afectación focal de primera motoneurona y probable de segunda."
+    },
+    {
+      "evidence": "No refiere otros síntomas",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Afectación focal de primera motoneurona y probable de segunda."
+    },
+    {
+      "evidence": "siendo el resto normal",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Afectación focal de primera motoneurona y probable de segunda."
+    },
+    {
+      "evidence": "No refiere otros síntomas",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Mononeuropatía del N. peroneo común derecho."
+    },
+    {
+      "evidence": "siendo el resto normal",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Mononeuropatía del N. peroneo común derecho."
+    },
+    {
+      "evidence": "reflejos musculares aumentados",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Mononeuropatía del N. peroneo común derecho."
+    },
+    {
+      "evidence": "Babinski presente",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Mononeuropatía del N. peroneo común derecho."
+    },
+    {
+      "evidence": "eversión del pie",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Mononeuropatía del N. peroneo común derecho."
+    },
+    {
+      "evidence": "flexión e inversión del pie",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Mononeuropatía del N. peroneo común derecho."
+    },
+    {
+      "evidence": "afectación hemimedular derecho",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "Afectación hemimedular derecho (Brown- Sequard)."
+    },
+    {
+      "evidence": "No refiere otros síntomas",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "Afectación hemimedular derecho (Brown- Sequard)."
+    },
+    {
+      "evidence": "siendo el resto normal",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "Afectación hemimedular derecho (Brown- Sequard)."
+    },
+    {
+      "evidence": "No refiere otros síntomas",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Plexopatía lumbar derecha."
+    },
+    {
+      "evidence": "siendo el resto normal",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Plexopatía lumbar derecha."
+    },
+    {
+      "evidence": "reflejos musculares aumentados",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Plexopatía lumbar derecha."
+    },
+    {
+      "evidence": "Babinski presente",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Plexopatía lumbar derecha."
+    }
+  ],
+  "neutralized_argumentation": "We must interpret the patient's condition as a motor neuron problem focally affecting the right leg. The information provided suggests that this is an upper motor neuron lesion, possibly a Brown-Sequard spinal cord lesion. The enhanced reflexes and Babinski sign are consistent with this diagnosis. We must not consider other parts of the nervous system being affected because they do not present with these symptoms."
+}
+{
+  "specialization": "URGENCIAS",
+  "case": "A 50-year-old man goes to the ER for chest pain. On arrival, he suffers sudden loss of consciousness. At exploration, retaliatory coma, absence of breathing and pulse. What is the first step he should take?:",
+  "options": [
+    "Insulation of the airway by orotracheal intubation and ventilation with self-inflatable bag.",
+    "Start basic cardiopulmonary resuscitation maneuvers for 2 min and then connect to the defibrillator monitor.",
+    "Channeling of a peripheral vein to administer adrenaline.",
+    "Immediate defibrillation with maximum energy.",
+    "Monitoring of heart rhythm and defibrillation if ventricular fibrillation or ventricular tachycardia."
+  ],
+  "correct_option": "Monitorización del ritmo cardiaco y desfíbrilación si fibrilación ventricular o taquicardia ventricular.",
+  "first_answered_option": "Monitorización del ritmo cardiaco y desfíbrilación si fibrilación ventricular o taquicardia ventricular.",
+  "answered_option_confidence": "100%",
+  "first_argument": "Before a cardiorespiratory stop (#absence of breathing and pulse#) the first measure to take is defibrillation in case of defibrillable rhythm",
+  "first_argument_confidence": "100%",
+  "corrected_argument": null,
+  "relations_raw": "(ausencia de respiración, support, 1)\n(pulso, support, 1)",
+  "evidence_relations": [
+    {
+      "evidence": "ausencia de respiración",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Aislamiento de la vía aérea mediante intubación orotraqueal y ventilación con bolsa autohinchable."
+    },
+    {
+      "evidence": "pulso",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Aislamiento de la vía aérea mediante intubación orotraqueal y ventilación con bolsa autohinchable."
+    }
+  ],
+  "neutralized_argumentation": "How do you make sure that the patient's airway is secure?\n"
+}

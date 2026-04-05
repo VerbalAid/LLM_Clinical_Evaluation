@@ -1,0 +1,99 @@
+{
+  "specialization": "INFECCIOSAS",
+  "case": "Paciente de 45 años de edad en el 15º día postrasplante de progenitores hematopoyéticos, con una neutropenia absoluta, plaquetas de 15000/uL y una hemoglobina de 7 g/dL, que presenta un cuadro clínico de dolor ocular con edema periorbitarío con discreta secreción nasal serosanguinolenta. ¿Cuál es el diagnóstico de presunción?",
+  "options": [
+    "Hematoma periorbitario.",
+    "Reacción alérgica, posiblemente a la medicación.",
+    "Sinusitis aguda bacteriana, probablemente estafilocócica.",
+    "Sinusitis por Aspergillus spp.",
+    "Mucormicosis."
+  ],
+  "correct_option": "Mucormicosis.",
+  "first_answered_option": "Mucormicosis.",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 5: se trata de una pregunta clásica del MIR en la que quieren que conozcamos la asociación entre la neutropenia (y en general situaciones de inmunodeficiencia) y la mucormicosis. La mucormicosis es una infección fúngica invasiva que provoca un cuadro de edema periorbitario, siendo también muy sugestiva la secreción nasal sanguinolenta. #neutropenia absoluta# #edema periorbitarío con discreta secreción nasal serosanguinolenta#      incorrectas 1,2,3,4: POR DESCARTE",
+  "first_argument_confidence": "100%",
+  "relations_raw": "(neutropenia absoluta, support, 5)\n(edema periorbitarío, support, 5)\n(discreta secreción nasal serosanguinolenta, support, 5)\n(None)",
+  "evidence_relations": [
+    {
+      "evidence": "neutropenia absoluta",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Mucormicosis."
+    },
+    {
+      "evidence": "edema periorbitarío",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Mucormicosis."
+    },
+    {
+      "evidence": "discreta secreción nasal serosanguinolenta",
+      "relation": " support",
+      "claim_num": 5,
+      "claim": "Mucormicosis."
+    }
+  ],
+  "neutralized_argumentation": "The patient's history of chronic neutropenia and recent onset edema periorbitario with serous nasal discharge suggests a diagnosis of mucormycosis. This is confirmed by the clinical presentation and laboratory findings. We recommend further evaluation to rule out other causes of neutropenia, such as medication side effects or genetic conditions. The patient should be started on antifungals for this life-threatening infection. (Continued) [1]\n\n"
+}
+{
+  "specialization": "CARDIOLOGÍA",
+  "case": "Hombre de 76 años de edad diagnosticado de insuficiencia cardiaca, en fibrilación auricular crónica, con disfunción sistólica severa (fracción de eyección 33%). Sigue tratamiento con inhibidor de enzima convertidora de la angiotensina, betabloqueante y diurético tiazídico. Pese a ello se encuentra sintomático, en clase funcional II de la NYHA. ¿Cuál sería la actitud a seguir?",
+  "options": [
+    "Añadiría espironolactona.",
+    "Suspendería tratamiento betabloqueante.",
+    "Añadiría al tratamiento amiodarona.",
+    "Añadiría al tratamiento verapamil."
+  ],
+  "correct_option": "Añadiría espironolactona.",
+  "first_answered_option": "Añadiría espironolactona.",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 1: nos piden la actitud a seguir en el caso de un paciente con insuficiencia cardiaca no bien controlada. #insuficiencia cardiaca# . El paciente tiene una disfunción ventricular grave con una FEVI baja #fracción de eyección 33%# y síntomas de grado 2 en la escala de disnea #sintomático, en clase funcional II de la NYHA# . Este paciente ya está en tratamiento con un IECA, un betabloqueante y un diurético, fármacos que son correctos para su situación clínica. El siguiente escalón a considerar en pacientes que persisten sintomáticos pese a los mismos es la espironolactona.      incorrecta 2: no debemos suspender el tratamiento con betabloqueante ya que es un fármaco que ha demostrado ser beneficioso en la insuficiencia cardiaca @insuficiencia cardiaca@      incorrecta 3: la amiodarona es un fármaco antiarrítmico que se utiliza para cardioeversión farmacológica en casos agudos de arritmia. Es cierto que este paciente se encuentra en fibrilación auricular pero es crónica, por lo que la amiodarona no está indicada @fibrilación auricular crónica@      incorrecta 4: el verapamilo es un antagonista del calcio, fármaco que esta contraindicado en los pacientes con insuficiencia cardiaca @insuficiencia cardiaca@",
+  "first_argument_confidence": "100%",
+  "relations_raw": "(insuficiencia cardiaca, support, 1)\n(fracción de eyección 33%, support, 1)\n(sintomático, support, 1)\n(clase funcional II de la NYHA, support, 1)\n(insuficiencia cardiaca, attack, 2)\n(fibrilación auricular crónica, attack, 3)\n(insuficiencia cardiaca, attack, 4)",
+  "evidence_relations": [
+    {
+      "evidence": "insuficiencia cardiaca",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Añadiría espironolactona."
+    },
+    {
+      "evidence": "fracción de eyección 33%",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Añadiría espironolactona."
+    },
+    {
+      "evidence": "sintomático",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Añadiría espironolactona."
+    },
+    {
+      "evidence": "clase funcional II de la NYHA",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Añadiría espironolactona."
+    },
+    {
+      "evidence": "insuficiencia cardiaca",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "Suspendería tratamiento betabloqueante."
+    },
+    {
+      "evidence": "fibrilación auricular crónica",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "Añadiría al tratamiento amiodarona."
+    },
+    {
+      "evidence": "insuficiencia cardiaca",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Añadiría al tratamiento verapamil."
+    }
+  ],
+  "neutralized_argumentation": "These are the correct arguments regarding treatment options for this patient with heart failure not well controlled. However, a few points should be corrected. In incorrect argument 2, it is stated that we should continue to use the betabloqueante, but this is actually beneficial in patients with heart failure. Incorrect argument 3, the amiodarone is an antiarrhythmic drug used for cardioversion in acute arrhythmia cases, not for chronic atrial fibrillation. Finally, in incorrect argument 4, verapamil is contraindicated in patients with heart failure. These points should be clarified before continuing treatment decisions."
+}

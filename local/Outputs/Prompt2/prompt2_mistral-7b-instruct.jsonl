@@ -1,0 +1,117 @@
+{
+  "specialization": "DIGESTIVO",
+  "case": "Hombre de 80 años, con antecedentes de HTA, cardiopatía isquémica y EPOC, al que se le realiza una rectocolonoscopia completa por presentar rectorragia, con los siguientes hallazgos: lesión polipoidea de 3 cm de diámetro situada a 10 cm del margen anal, que ocupa la mitad de la circunferencia. Resto de exploración sin hallazgos hasta ciego. En la biopsia del pólipo se aprecia un adenocarcinoma limitado a la submucosa. Ecografía endorrectal: uT1N0. RM pélvica: T1N0. TC: Sin evidencia de enfermedad a distancia. ¿Cuál será la decisión terapéutica más probable que se tome en la Comisión Multidisciplinar de Tumores?",
+  "options": [
+    "Amputación abdomino-perineal de recto.",
+    "Radioterapia neoadyuvante y resección anterior baja de recto por vía laparoscópica.",
+    "Microcirugia transanal endoscópica.",
+    "Resección anterior baja de recto vía laparotómica.",
+    "Resección anterior baja de recto vía laparoscópica y radioterapia adyuvante."
+  ],
+  "correct_option": "Microcirugia transanal endoscópica.",
+  "first_answered_option": "Microcirugia transanal endoscópica.",
+  "answered_option_confidence": "80%",
+  "first_argument": "correcta 3: se trata de un paciente de edad avanzada con múltiple comorbilidad al que se le ha diagnosticado un tumor poco agresivo sin signos de metástasis, por lo que sería de elección realizar una resección lo menos agresiva posible, como es la resección transanal endoscópica por microcirugía #80 años, con antecedentes de HTA, cardiopatía isquémica y EPOC#(apoya)# #T1N0#(apoya)# #Sin evidencia de enfermedad a distancia#(apoya)# #lesión polipoidea de 3 cm#(apoya)#",
+  "first_argument_confidence": "40%",
+  "relations_raw": "(80 años, support, 3)\n(HTA, support, 3)\n(cardiopatía isquémica, support, 3)\n(EPOC, support, 3)\n(T1N0, support, 3)\n(Sin evidencia de enfermedad a distancia, support, 3)\n(lesión polipoidea de 3 cm, support, 3)",
+  "evidence_relations": [
+    {
+      "evidence": "80 años",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Microcirugia transanal endoscópica."
+    },
+    {
+      "evidence": "HTA",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Microcirugia transanal endoscópica."
+    },
+    {
+      "evidence": "cardiopatía isquémica",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Microcirugia transanal endoscópica."
+    },
+    {
+      "evidence": "EPOC",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Microcirugia transanal endoscópica."
+    },
+    {
+      "evidence": "T1N0",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Microcirugia transanal endoscópica."
+    },
+    {
+      "evidence": "Sin evidencia de enfermedad a distancia",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Microcirugia transanal endoscópica."
+    },
+    {
+      "evidence": "lesión polipoidea de 3 cm",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Microcirugia transanal endoscópica."
+    }
+  ],
+  "neutralized_argumentation": " In this case, we are dealing with an elderly patient with multiple comorbidities who has been diagnosed with a relatively indolent tumor that does not show any signs of metastasis. Given the patient's advanced age and existing health conditions such as hypertension, ischemic heart disease, and chronic obstructive pulmonary disease, a less aggressive surgical approach is advisable.\n\nConsidering the T1N0 staging of the tumor, which indicates an early-stage localized growth without regional lymph node involvement, and the absence of distant metastasis, a transanal endoscopic microsurgery (TEM) would be an appropriate choice. The tumor is approximately 3 cm in size, suggesting it to be a polypoid lesion. As no distant evidence of disease has been detected, this less invasive surgical technique should effectively address the tumor while minimizing potential complications for our patient."
+}
+{
+  "specialization": "NEUROLOGÍA",
+  "case": "Una mujer de 35 años de edad es estudiada debido a episodios de dolor periocular izquierdo asociado a congestión nasal, lagrimeo e inyección conjuntival homolaterales. Cada crisis dura aproximadamente 15 minutos y se repite en torno a 6 veces al día. Las crisis no han respondido a tratamiento con paracetamol. La exploración neurológica y la RM craneal son normales. ¿Cuál de las siguientes es una manifestación clásica del trastorno de esta paciente?",
+  "options": [
+    "Persistencia de dolor en la frente en los periodos intercrisis.",
+    "Fotofobia que puede ser muy intensa y asociar náuseas y vómitos.",
+    "Respuesta del dolor a tratamiento con indometacina.",
+    "Mayor frecuencia del dolor en el periodo menstrual."
+  ],
+  "correct_option": "Respuesta del dolor a tratamiento con indometacina.",
+  "first_answered_option": "Respuesta del dolor a tratamiento con indometacina.",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 3: esta pregunta nos habla de una mujer en la que debemos sospechar de hemicránea paroxística. Esta entidad cursa con cefalea que asocia sintomatología trigémino autonómica con la que nos describen en el caso clínico: lagrimeo, inyección conjuntival... #dolor periocular# #lagrimeo e inyección conjuntival homolaterales# Suelen ocurrir múltiples episodios de dolor a lo largo del día, breves #15 minutos y se repite en torno a 6 veces al día# y las pruebas complementarias de imagen suelen ser anodinas #15 minutos y se repite en torno a 6 veces al día#. En esta patología la opción correcta, y por lo tanto la que debemos marcar es que mejoran de manera muy clara con la indometacina (siendo muchas veces motivo por el cual se llega al diagnóstico de la entidad). Por lo tanto el resto de respuestas son falsas por descarte.      incorrectas 1,2,4: POR DESCARTE",
+  "first_argument_confidence": "100%",
+  "relations_raw": "(dolor periocular, support, 3)\n(lagrimeo, support, 3)\n(inyección conjuntival homolaterales, support, 3)\n(15 minutos, support, 3)\n(15 minutos, support, 3)\n(6 veces al día, support, 3)\n\n(None)",
+  "evidence_relations": [
+    {
+      "evidence": "dolor periocular",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Respuesta del dolor a tratamiento con indometacina."
+    },
+    {
+      "evidence": "lagrimeo",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Respuesta del dolor a tratamiento con indometacina."
+    },
+    {
+      "evidence": "inyección conjuntival homolaterales",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Respuesta del dolor a tratamiento con indometacina."
+    },
+    {
+      "evidence": "15 minutos",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Respuesta del dolor a tratamiento con indometacina."
+    },
+    {
+      "evidence": "15 minutos",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Respuesta del dolor a tratamiento con indometacina."
+    },
+    {
+      "evidence": "6 veces al día",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Respuesta del dolor a tratamiento con indometacina."
+    }
+  ],
+  "neutralized_argumentation": " In the case of a female patient presented, there are strong suspicions of paroxysmal hemicrania, a distinct headache disorder characterized by attacks of unilateral pain that often last between 15 minutes to six times a day. The clinical profile, as described in this case, includes trigeminal autonomic symptoms such as tearing and conjunctival injection on the affected side, accompanied by periorbital pain, and homolateral lacrimation and conjunctival injection.\n\nThe patient's reported episodes of pain are brief, lasting 15 minutes or fewer, occurring multiple times daily, aligning with the typical pattern associated with paroxysmal hemicrania. Routine imaging studies are usually unremarkable in this condition.\n\nNotably, the improvement observed in response to indometacin treatment is a strong indicator supporting the diagnosis of paroxysmal hemicrania. As such, treatment with other medications, such as those mentioned in options 1, 2, and 4, would not provide significant relief for this particular case. Therefore, these alternative treatments can be considered incorrect by exclusion or eliminated from further consideration."
+}

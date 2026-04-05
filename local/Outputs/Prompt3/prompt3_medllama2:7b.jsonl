@@ -1,0 +1,68 @@
+{
+  "specialization": "GINECOLOGÍA",
+  "case": "A una mujer de 35 años se realiza una citología vaginal tras 5 años sin control previo y el diagnóstico es SIL (lesión intraepitelial) de alto grado. La conducta correcta a seguir es:",
+  "options": [
+    "Hacer colposcopia. Si es normal, programar una conización.",
+    "Confirmar la citología con una biopsia de cérvix bajo control colposcópico.",
+    "Repetir citología para confirmar diagnóstico.",
+    "Hacer tipaje de virus HPV. Realizar conización si el test de HPV es positivo a virus de alto riesgo."
+  ],
+  "correct_option": "Confirmar la citología con una biopsia de cérvix bajo control colposcópico.",
+  "first_answered_option": "Confirmar la citología con una biopsia de cérvix bajo control colposcópico.",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 2: se trata de una paciente de 35 años con una citología positiva en la que se ha objetivado una lesión intraepitelial de alto grado #SIL (lesión intraepitelial) de alto grado#. La citología observa las células de manera individual, para la confirmación diagnóstica es necesaria una biopsia que observe el tejido en su totalidad. Otra opción sería realizar directamente una conización.      incorrecta 1: ante una lesión citológica HSIL (High SIL) no podemos quedarnos tranquilos con una colposcopia con visualización directa normal, ya que la lesión podría ser endocervical y no visualizarse de este modo @SIL (lesión intraepitelial) de alto grado@      incorrecta 3: no es una actitud correcta en este caso      @SIL (lesión intraepitelial) de alto grado@   incorrecta 4: el test de HPV no va a ser discriminativo a este nivel, es decir no es lo que va a decidir si se debe hacer una conización@SIL (lesión intraepitelial) de alto grado@",
+  "first_argument_confidence": "100%",
+  "relations_raw": "(SIL (lesión intraepitelial) de alto grado, support, 2)\n(SIL (lesión intraepitelial) de alto grado, attack, 1)\n(None)\n(SIL (lesión intraepitelial) de alto grado, attack, 4)\n(SIL (lesión intraepitelial) de alto grado, attack, 4)",
+  "evidence_relations": [
+    {
+      "evidence": "SIL (lesión intraepitelial) de alto grado",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Confirmar la citología con una biopsia de cérvix bajo control colposcópico."
+    },
+    {
+      "evidence": "SIL (lesión intraepitelial) de alto grado",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Hacer colposcopia. Si es normal, programar una conización."
+    },
+    {
+      "evidence": "SIL (lesión intraepitelial) de alto grado",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Hacer tipaje de virus HPV. Realizar conización si el test de HPV es positivo a virus de alto riesgo."
+    },
+    {
+      "evidence": "SIL (lesión intraepitelial) de alto grado",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Hacer tipaje de virus HPV. Realizar conización si el test de HPV es positivo a virus de alto riesgo."
+    }
+  ],
+  "neutralized_argumentation": "This patient has high-grade lesion intraepithelial in her cervix. High-risk HPV is the likely cause, and a biopsy or conization may be necessary for confirmation. If we do not perform this procedure, there is an increased risk of cervical cancer. However, we cannot use colposcopy alone to rule out endocervical lesions. For these reasons, it's crucial that you follow-up with a biopsy or conization if the HPV test was positive and the colposcopy did not visualize any abnormalities."
+}
+{
+  "specialization": "ENDOCRINOLOGÍA",
+  "case": "Una mujer de 55 años, diabética tipo 2 y obesa, en tratamiento con metformina, con Hb A1c de 8%, cuenta historia de infecciones urinarias de repetición. ¿Cuál de las siguientes opciones terapéuticas para asociar a la metformina considera la MENOS adecuada?",
+  "options": [
+    "Inhibidores DPP4.",
+    "Análogos GLP1.",
+    "Insulina basal.",
+    "lnhibidores SGLT2."
+  ],
+  "correct_option": "lnhibidores SGLT2.",
+  "first_answered_option": "lnhibidores SGLT2.",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 4: respuesta teórica en la que debemos conocer los efectos adversos de los tratamientos para la diabetes. En este caso la clave se encuentra en reconocer que los iSGLT son potenciales productores de infecciones de tracto urinario inferior, por lo que en una paciente, que como indica en el enunciado es propensa a las mismas, no estaría indicado este tipo de fármaco #infecciones urinarias de repetición#      incorrectas 1,2,3: por descarte.",
+  "first_argument_confidence": "100%",
+  "relations_raw": "(infecciones urinarias de repetición, support, 4)\n(None)",
+  "evidence_relations": [
+    {
+      "evidence": "infecciones urinarias de repetición",
+      "relation": " support",
+      "claim_num": 4,
+      "claim": "lnhibidores SGLT2."
+    }
+  ],
+  "neutralized_argumentation": "The patient is at risk of recurrent UTIs due to her history of these infections. SGLT-2i are not indicated for this patient as they may cause more UTIs, which could lead to renal damage if left untreated. A diuretic or other UTI-prevention regimen should be considered instead. This decision is based on the known adverse effects of these treatments and the risk of recurrent infections in this patient.\n\nThis explanation provides a coherent clinical reasoning that prioritizes the safety of the patient, taking into account their medical history and current symptoms. It acknowledges the potential harmful side effects of SGLT-2i on renal function and proposes alternative treatments to prevent recurrent UTIs."
+}

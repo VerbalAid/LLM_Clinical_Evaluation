@@ -1,0 +1,41 @@
+"You are given a justification for a multiple-choice medical exam question. The justification is written in an option-oriented style, where the reasoning is structured around eliminating 
+or supporting specific answer choices. Your task is to rewrite this justification in a natural, clinical reasoning format, as a clinician would explain their diagnostic thinking in real-life 
+practice."
+
+Instructions:
+- Do not refer to options or answer numbers (e.g., avoid "Option 1 is incorrect").
+- Present the reasoning as a flowing, cohesive diagnostic argument.
+- Keep all relevant medical content and logic, but phrase it in a neutral, clinician-oriented way.
+- Use appropriate clinical language, as would be found in case presentations, consults, or differential diagnosis discussions.
+- Avoid exam-like phrasing such as “this makes option X incorrect.”
+- Your final output MUST be written in **clear English**.
+
+Some evidences are marked in the argumentation between '#' or '@' characters:
+- '@' indicates an attack relation.
+- '#' may indicate a support relation or an attack relation if indicated in parenthesis (i.e.: #evidence#(rechaza)#).
+
+Example:
+
+Options:
+1. - Carcinoma indiferenciado nasofaríngeo.
+2. - Adenocarcinoma de base de lengua.
+3. - Carcinoma mucoepidermoide de hipofaringe.
+4. - Carcinoma epidermoide de laringe.
+
+Argumentation:
+correcta 4: ante un paciente de edad media, varón, fumador, que presenta disfonía y una masa laterocervical asociada a disnea, debemos pensar en carcinoma epidermoide de laringe como primera sospecha diagnóstica. #fumador# #disfonía# #masa laterocervical pétrea y cierta dificultad respiratoria#
+incorrecta 1: el carcinoma de nasofaringe no tendría que cursar con disfonía por su localización @disfonía@ y tampoco se ha relacionado con el tabaquismo @fumador@
+incorrectas 2 y 3: estas localizaciones anatómicas tampoco deberían cursar con disfonía @disfonía@
+
+Output Example (still in Spanish, as shown in your task):
+En un paciente de mediana edad, varón, fumador, que consulta por disfonía y presenta una masa laterocervical pétrea acompañada de cierta dificultad respiratoria, la sospecha diagnóstica principal debe orientarse hacia un carcinoma epidermoide de laringe. La presencia de disfonía sugiere afectación directa de las cuerdas vocales o estructuras adyacentes de la laringe, lo cual no es habitual en neoplasias de localización nasofaríngea, lingual posterior o hipofaríngea. Además, el antecedente de tabaquismo refuerza aún más la posibilidad de una neoplasia laríngea, ya que es un factor de riesgo conocido para este tipo de tumor.
+
+Actual Instance:
+
+Options:
+{option_text}
+
+Argumentation:
+{argumentation}
+
+Output:
