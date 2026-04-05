@@ -1,0 +1,7 @@
+Rewrite the reasoning inside ### as one coherent clinical 
+explanation. Remove all option references. 
+Preserve all medical facts. English only.
+
+###
+{argumentation}
+###

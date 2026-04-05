@@ -1,0 +1,110 @@
+{
+  "specialization": "ENDOCRINOLOGÍA",
+  "case": "Mujer de 43 años intervenida hace 6 años de obesidad mórbida mediante una técnica de derivación biliopancreática. Ha perdido un 75% del exceso de peso y mantiene una dieta oral de 1500 Kcal sin ningún problema en su tolerancia. Señale qué suplementación NO sería necesaria en esta paciente:",
+  "options": [
+    "Hierro.",
+    "Calcio.",
+    "Vitamina D.",
+    "Suplemento proteico."
+  ],
+  "correct_option": "Suplemento proteico.",
+  "first_answered_option": "Suplemento proteico.",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 4: para responder a esta pregunta debemos conocer, por un lado la técnica quirúrgica de la que nos hablan y por otro, la anatomo-fisiología del aparato digestivo. En esta paciente se ha realizado una derivación bilio-pancreática como técnica quirúrgica baríatrica. Esta cirugía es del tipo \"malabsortiva\" y \"restrictiva\" ya que, dicho a modo \"simple\" reduce la longitud del tracto gastrointestinal y a su vez la superficie de absorción de nutrientes. En la derivación bilio-pancreática, se \"reseca\" parte del estómago y la porción proximal del intestino delgado. Estas técnicas disminuyen la cantidad de calorías absorbidas, pero a su vez, se pierde la capacidad de absorción de ciertos micronutrientes que son trasportados al torrente sanguíneo en las secciones que se resecan en esta cirugía. En el caso de esta técnica, también conocida como Y de Roux, existirá déficit de calcio y hierro (los cuales se absorben en el duodeno), así como de vitamina D, que se absorbe, junto con el resto de vitaminas liposolubles en el duodeno y yeyuno. No obstante, no habrá alteración en la absorción de las proteínas, por lo que la paciente no necesitará suplementación a este nivel. #técnica de derivación biliopancreática#      incorrectas 1,2,3: por descarte",
+  "first_argument_confidence": "100%",
+  "relations_raw": "(técnica de derivación biliopancreática, support, 4)\n(None)",
+  "evidence_relations": [
+    {
+      "evidence": "técnica de derivación biliopancreática",
+      "relation": " support",
+      "claim_num": 4,
+      "claim": "Suplemento proteico."
+    }
+  ],
+  "neutralized_argumentation": "The patient has undergone a Roux-en-Y gastrojejunostomy or \"biliopancreatic diversion\" as part of their bariatric surgery. The procedure is known as malabsorptive and restrictive because it reduces the length of the gastrointestinal tract and therefore surface area for nutrient absorption. However, this technique also resects parts of the stomach and small intestine. As a result, there will be decreased absorption of calcium and iron (which are absorbed in the duodenum) as well as vitamin D, which is absorbed along with other liposoluble vitamins in the duodenum and ileum. However, this patient does not require supplementation of these nutrients at present given their normal levels."
+}
+{
+  "specialization": "PALIATIVOS",
+  "case": "Mujer de 89 años diagnosticada de un adenocarcinoma de colon con metástasis hepáticas. Acude a la consulta tres semanas después del diagnóstico con estreñimiento de tres dias de evolución sin náuseas ni vómitos. A la exploración clínica el abdomen es blando, depresible y con ruidos presentes. La paciente toma 20 mg día de cloruro mórfico desde el diagnóstico, con dolor abdominal controlado. ¿Cuál considera que es la actitud terapéutica más adecuada?",
+  "options": [
+    "Bajar dosis de opioides a la mitad.",
+    "Pautar un laxante osmótico y comprobar mediante un tacto rectal que no exista impactación fecal.",
+    "Pautar un procinético.",
+    "Realizar una TC urgente ante la sospecha de obstrucción intestinal."
+  ],
+  "correct_option": "Pautar un laxante osmótico y comprobar mediante un tacto rectal que no exista impactación fecal.",
+  "first_answered_option": "Pautar un laxante osmótico y comprobar mediante un tacto rectal que no exista impactación fecal.",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 2: se trata de una paciente de 89 años con una neoplasia en estadio avanzado, que presenta estreñimiento en posible relación con los opioides que toma para el control del dolor. En estos casos de estreñimiento debemos comprobar que no exista una impactación fecal mediante un tacto rectal y se recomienda el uso de laxantes osmóticos, en casos como el descrito en el que no sospechamos que haya una obstrucción ni otra patología condicionante. #estreñimiento de tres dias# #sin náuseas ni vómitos# #sin náuseas ni vómitos# #toma 20 mg día de cloruro mórfico#      incorrecta 1: si el dolor abdominal está bien controlado y el único efecto adverso es el estreñimiento no debemos reducir la dosis de mórfico #dolor abdominal controlado#      incorrecta 3: no debemos utilizar laxantes procinéticos en los casos de estreñimiento por mórficos @toma 20 mg día de cloruro mórfico@      incorrecta 4: con la clínica que presenta esta paciente, sin vómitos y con un abdomen completamente anodino, no tenemos motivos para sospechar de una obstrucción intestinal @sin náuseas ni vómitos. A la exploración clínica el abdomen es blando, depresible y con ruidos presentes@",
+  "first_argument_confidence": "100%",
+  "relations_raw": "(estreñimiento de tres dias, support, 2)\n(sin náuseas ni vómitos, support, 2)\n(sin náuseas ni vómitos, support, 2)\n(toma 20 mg día de cloruro mórfico, support, 2)\n(dolor abdominal controlado, support, 1)\n(toma 20 mg día de cloruro mórfico, attack, 3)\n(sin náuseas ni vómitos, attack, 4)\n(abdomen, attack, 4)\n(blando, attack, 4)\n(depresible, attack, 4)\n(ruidos presentes, attack, 4)",
+  "evidence_relations": [
+    {
+      "evidence": "estreñimiento de tres dias",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Pautar un laxante osmótico y comprobar mediante un tacto rectal que no exista impactación fecal."
+    },
+    {
+      "evidence": "sin náuseas ni vómitos",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Pautar un laxante osmótico y comprobar mediante un tacto rectal que no exista impactación fecal."
+    },
+    {
+      "evidence": "sin náuseas ni vómitos",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Pautar un laxante osmótico y comprobar mediante un tacto rectal que no exista impactación fecal."
+    },
+    {
+      "evidence": "toma 20 mg día de cloruro mórfico",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "Pautar un laxante osmótico y comprobar mediante un tacto rectal que no exista impactación fecal."
+    },
+    {
+      "evidence": "dolor abdominal controlado",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "Bajar dosis de opioides a la mitad."
+    },
+    {
+      "evidence": "toma 20 mg día de cloruro mórfico",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "Pautar un procinético."
+    },
+    {
+      "evidence": "sin náuseas ni vómitos",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Realizar una TC urgente ante la sospecha de obstrucción intestinal."
+    },
+    {
+      "evidence": "abdomen",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Realizar una TC urgente ante la sospecha de obstrucción intestinal."
+    },
+    {
+      "evidence": "blando",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Realizar una TC urgente ante la sospecha de obstrucción intestinal."
+    },
+    {
+      "evidence": "depresible",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Realizar una TC urgente ante la sospecha de obstrucción intestinal."
+    },
+    {
+      "evidence": "ruidos presentes",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Realizar una TC urgente ante la sospecha de obstrucción intestinal."
+    }
+  ],
+  "neutralized_argumentation": "The patient is an 89-year-old woman with advanced cancer and constipation possibly due to the opioids she takes for pain control. We should verify that there's no impacted stool through a digital rectal examination, and recommend osmotic laxatives in cases like this where we don't suspect any obstruction or other conditioning factor. #constipation of three days# #no nausea or vomiting# #takes 20 mg/day of morphine#\nThe patient's symptoms are consistent with opioid-induced constipation, and we should not reduce the dose of morphine without further investigation. We also shouldn't use prokinetic agents in these cases because they can worsen the constipation. The patient's clinical presentation is normal and doesn't suggest intestinal obstruction. #normal abdomen#"
+}

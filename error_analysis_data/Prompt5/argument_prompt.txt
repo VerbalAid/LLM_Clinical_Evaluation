@@ -1,0 +1,11 @@
+You will rewrite the following justification as a polished clinical explanation.
+
+Important:
+- Do not provide step-by-step reasoning, internal thoughts, or chain-of-thought.
+- Only provide the final, fully-formed clinical explanation.
+- Keep every medical fact and preserve the logic.
+- Remove all references to options, correctness, or rejections.
+- Write in clear, formal English suitable for clinical communication.
+
+Original justification:
+{argumentation}

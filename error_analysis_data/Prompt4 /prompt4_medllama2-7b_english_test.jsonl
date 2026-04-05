@@ -1,0 +1,246 @@
+{
+  "specialization": "CARDIOLOGÍA",
+  "case": "If in a patient with chronic heart failure we detect prominent v waves in the jugular venous pulse and in cardiac auscultation a holosystolic murmur is heard in the area of the xifoid appendix that is accentuated with deep inspiration. What is the valvulopathy responsible for this physical examination?:",
+  "options": [
+    "Mitral insufficiency.",
+    "Pulmonary failure.",
+    "Tricuspid insufficiency.",
+    "Aortic failure.",
+    "Aortic stenosis."
+  ],
+  "correct_option": "Insuficiencia tricúspide.",
+  "first_answered_option": "Insuficiencia tricúspide.",
+  "answered_option_confidence": "100%",
+  "first_argument": "- Correct option 3: Tricuspid insufficiency causes #heart failure#, #prominent v waves in the jugular venous pulse# and a #holosistolic murmur in the area of the xifoid appendix that is accentuated with deep inspiration#. - Wrong option 1: Mitral insufficiency would not cause @ondas v prominent in the jugular venous pulse@ and although it causes a systolic murmur is usually in the axillary region (not @in the area of the xifoid appendage@) and is not associated with an increase in breath during inspiration (@emphasis accentuated with deep inspiration@). - Wrong option 2: Pulmonary insufficiency causes a diastolic murmur (not @holosistolic@) in the upper left parasternal area (not @in the area of the xifoid appendage@). Furthermore, it would not provoke @ondas v prominent in the @ondas v. venous jugular pulse@. - Wrong option 4: aortic insufficiency causes diastolic murmur (not @holosistolic@) in the upper right parasternal area (not @in the area of the xifoid appendage@). Furthermore, it would not provoke @ondas v prominent in the jugular venous pulse or an increase in the breath during inspiration (@emphasis with deep inspiration@) - Wrong option 5: although aortic stenosis causes a systolic murmur this is not usually @holosistolic@ and is usually ausculted in the upper right parasternal area (not @in the area of the xifoid appendage@). Furthermore, it would not provoke @ondas v prominent in the jugular venous pulse or an increase in the breath during inspiration (@emphasis with deep inspiration@)",
+  "first_argument_confidence": "100%",
+  "corrected_argument": null,
+  "relations_raw": "(insuficiencia cardiaca, support, 3)\n(ondas v prominentes, support, 3)\n(pulso venoso yugular, support, 3)\n(soplo holosistólico, support, 3)\n(área del apéndice xifoides, support, 3)\n(inspiración profunda, support, 3)\n(ondas v prominentes, attack, 1)\n(apéndice xifoides, attack, 1)\n(se acentúa con la inspiración profunda, attack, 1)\n(holosistólico, attack, 2)\n(en el área del apéndice xifoides, attack, 2)\n(ondas v prominentes en el pulso venoso yugular, attack, 2)\n(holosistólico, attack, 4)\n(en el área del apéndice xifoides, attack, 4)\n(ondas v prominentes en el pulso venoso yugular, attack, 4)\n(se acentúa con la inspiración profunda, attack, 4)\n(holosistólico, attack, 5)\n(en el área del apéndice xifoides, attack, 5)\n(ondas v prominentes en el pulso venoso yugular, attack, 5)\n(se acentúa con la inspiración profunda, attack, 5)",
+  "evidence_relations": [
+    {
+      "evidence": "insuficiencia cardiaca",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Insuficiencia tricúspide."
+    },
+    {
+      "evidence": "ondas v prominentes",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Insuficiencia tricúspide."
+    },
+    {
+      "evidence": "pulso venoso yugular",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Insuficiencia tricúspide."
+    },
+    {
+      "evidence": "soplo holosistólico",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Insuficiencia tricúspide."
+    },
+    {
+      "evidence": "área del apéndice xifoides",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Insuficiencia tricúspide."
+    },
+    {
+      "evidence": "inspiración profunda",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "Insuficiencia tricúspide."
+    },
+    {
+      "evidence": "ondas v prominentes",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Insuficiencia mitral."
+    },
+    {
+      "evidence": "apéndice xifoides",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Insuficiencia mitral."
+    },
+    {
+      "evidence": "se acentúa con la inspiración profunda",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Insuficiencia mitral."
+    },
+    {
+      "evidence": "holosistólico",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "Insuficiencia pulmonar."
+    },
+    {
+      "evidence": "en el área del apéndice xifoides",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "Insuficiencia pulmonar."
+    },
+    {
+      "evidence": "ondas v prominentes en el pulso venoso yugular",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "Insuficiencia pulmonar."
+    },
+    {
+      "evidence": "holosistólico",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Insuficiencia aórtica."
+    },
+    {
+      "evidence": "en el área del apéndice xifoides",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Insuficiencia aórtica."
+    },
+    {
+      "evidence": "ondas v prominentes en el pulso venoso yugular",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Insuficiencia aórtica."
+    },
+    {
+      "evidence": "se acentúa con la inspiración profunda",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Insuficiencia aórtica."
+    },
+    {
+      "evidence": "holosistólico",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Estenosis aórtica."
+    },
+    {
+      "evidence": "en el área del apéndice xifoides",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Estenosis aórtica."
+    },
+    {
+      "evidence": "ondas v prominentes en el pulso venoso yugular",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Estenosis aórtica."
+    },
+    {
+      "evidence": "se acentúa con la inspiración profunda",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Estenosis aórtica."
+    }
+  ],
+  "neutralized_argumentation": "Option 3 is correct. The presence of #heart failure#, #prominent v waves in the jugular venous pulse# and a #holosistolic murmur in the area of the xifoid appendix would indicate tricuspid insufficiency. While options 1, 2 and 5 are incorrect. Mitral, Pulmonary, and Aortic valve insufficiencies do not cause these findings.\nThe correct diagnosis is tricuspid insufficiency leading to heart failure due to a right-sided heart failure mechanism. The presence of prominent v waves in the jugular venous pulse and holosistolic murmur are specific signs of this diagnosis, given its location in the area of the xifoid appendix which is an anatomical landmark."
+}
+{
+  "specialization": "DIGESTIVO",
+  "case": "A 30-year-old male with a family history of a father who died of colon cancer at age 38. A colonoscopy is performed that shows hundreds of adenomas throughout the colon. Which of the following statements is FALSA?:",
+  "options": [
+    "The patient has a familiar adenomatous polyposis.",
+    "The most appropriate management is sulindac, annual surveillance colonoscopy and total colectomy at age 40.",
+    "If you do not undergo surgical treatment almost certainly, the patient will develop colorectal cancer.",
+    "The first-degree family members of the patient should be studied.",
+    "The patient's children are at 50% risk for the same disease."
+  ],
+  "correct_option": "El manejo más apropiado es sulindac, colonoscopias de vigilancia anuales y colectomía total a los 40 años.",
+  "first_answered_option": "El manejo más apropiado es sulindac, colonoscopias de vigilancia anuales y colectomía total a los 40 años.",
+  "answered_option_confidence": "60%",
+  "first_argument": "Correct 2: family history of first degree colon cancer at an early age and the presence of hundreds of adenomas in the colon suggest a family adenomatous polyposis #family history of a father who died from colon cancer at 38 years old#(support)# #hundreds of adenomas throughout the colon#(support)#. It is an inherited genetic disease in which there is a very great predisposition to develop colon cancer at a very early age. That is why total colectomy must be performed before 40 years of age #total colectomy at 40 years old#(support)# Incorrect 1: family history of first degree colon cancer at an early age and the presence of hundreds of adenomas in the colon suggest a family adenomatous polyposis #antecent family member of a father who died of colon cancer at age 38# (discarded)# # hundred adenomas throughout the colon# (discarded)# Incorrect 3: family adenomatous polyposis is a genetic hereditary disease in which there is a great willingness to develop colon cancer at a very early age so that a total prophylactic colectomy is usually performed #Not to undergo surgical treatment almost certainly the patient will develop colorectal cancer#(discarded)# Incorrect 4: family history of first degree colon cancer at an early age and the presence of hundreds of adenomas in the colon suggest a family adenomatous polyposis #family history of father who died of colon cancer at age 38#(supported)# #hundreds of adenomas throughout the colon#(discarded)#. It is an autosomal dominant hereditary disease so #First-degree family members of the patient should be studied#(discarded)#Incorrect 5:Family adenomatous polyposis is an autosomal dominant hereditary disease so #The patient's children are at 50% risk of the same disease#(discarded)#",
+  "first_argument_confidence": "80%",
+  "corrected_argument": null,
+  "relations_raw": "(antecedente familiar de padre fallecido por cáncer de colon a los 38 años, support, 2)\n(cientos de adenomas a lo largo de todo el colon, support, 2)\n(colectomía total a los 40 años, support, 2)\n(antecedente familiar de padre fallecido por cáncer de colon a los 38 años, attack, 1)\n(cientos de adenomas a lo largo de todo el colon, attack, 1)\n(De no someterse a tratamiento quirúrgico, attack, 3)\n(paciente, attack, 3)\n(cáncer colorrectal, attack, 3)\n(antecedente familiar de padre fallecido por cáncer de colon a los 38 años, support, 4)\n(cientos de adenomas a lo largo de todo el colon, attack, 4)\n(Deben estudiarse los familiares de primer grado del paciente, attack, 4)\n(Los hijos del paciente, attack, 5)\n(50%, attack, 5)\n(riesgo de padecer la misma enfermedad, attack, 5)",
+  "evidence_relations": [
+    {
+      "evidence": "antecedente familiar de padre fallecido por cáncer de colon a los 38 años",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "El manejo más apropiado es sulindac, colonoscopias de vigilancia anuales y colectomía total a los 40 años."
+    },
+    {
+      "evidence": "cientos de adenomas a lo largo de todo el colon",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "El manejo más apropiado es sulindac, colonoscopias de vigilancia anuales y colectomía total a los 40 años."
+    },
+    {
+      "evidence": "colectomía total a los 40 años",
+      "relation": " support",
+      "claim_num": 2,
+      "claim": "El manejo más apropiado es sulindac, colonoscopias de vigilancia anuales y colectomía total a los 40 años."
+    },
+    {
+      "evidence": "antecedente familiar de padre fallecido por cáncer de colon a los 38 años",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "El paciente padece una poliposis adenomatosa familiar."
+    },
+    {
+      "evidence": "cientos de adenomas a lo largo de todo el colon",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "El paciente padece una poliposis adenomatosa familiar."
+    },
+    {
+      "evidence": "De no someterse a tratamiento quirúrgico",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "De no someterse a tratamiento quirúrgico casi con toda seguridad el paciente desarrollará un cáncer colorrectal."
+    },
+    {
+      "evidence": "paciente",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "De no someterse a tratamiento quirúrgico casi con toda seguridad el paciente desarrollará un cáncer colorrectal."
+    },
+    {
+      "evidence": "cáncer colorrectal",
+      "relation": " attack",
+      "claim_num": 3,
+      "claim": "De no someterse a tratamiento quirúrgico casi con toda seguridad el paciente desarrollará un cáncer colorrectal."
+    },
+    {
+      "evidence": "antecedente familiar de padre fallecido por cáncer de colon a los 38 años",
+      "relation": " support",
+      "claim_num": 4,
+      "claim": "Deben estudiarse los familiares de primer grado del paciente."
+    },
+    {
+      "evidence": "cientos de adenomas a lo largo de todo el colon",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Deben estudiarse los familiares de primer grado del paciente."
+    },
+    {
+      "evidence": "Deben estudiarse los familiares de primer grado del paciente",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Deben estudiarse los familiares de primer grado del paciente."
+    },
+    {
+      "evidence": "Los hijos del paciente",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Los hijos del paciente tienen un 50% de riesgo de padecer la misma enfermedad."
+    },
+    {
+      "evidence": "50%",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Los hijos del paciente tienen un 50% de riesgo de padecer la misma enfermedad."
+    },
+    {
+      "evidence": "riesgo de padecer la misma enfermedad",
+      "relation": " attack",
+      "claim_num": 5,
+      "claim": "Los hijos del paciente tienen un 50% de riesgo de padecer la misma enfermedad."
+    }
+  ],
+  "neutralized_argumentation": "This is a case of familial adenomatous polyposis, specifically an autosomal dominant inheritance. The presence of hundreds of adenomas throughout the colon suggests this diagnosis. The patient's first-degree family members should be evaluated for this condition. It is important to perform total colectomy before age 40 due to the high risk of colorectal cancer in these patients.\n\n"
+}

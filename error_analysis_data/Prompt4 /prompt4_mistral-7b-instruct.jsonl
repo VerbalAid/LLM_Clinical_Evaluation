@@ -1,0 +1,99 @@
+{
+  "specialization": "ANATOMÍA",
+  "case": "Revisando la angio-TC de un hombre de 70 años en estudio por aneurisma de aorta abdominal el radiólogo informa de la presencia de una oclusión completa de la arteria mesentérica inferior. El paciente se encuentra completamente asintomático. La oclusión de la arteria mesentérica inferior cursa de manera asintomática en muchas ocasiones ya que el territorio que irriga puede recibir flujo proveniente de:",
+  "options": [
+    "La arteria cólica media.",
+    "La arteria gastroduodenal.",
+    "La arteria epigástrica inferior izquierda.",
+    "La arteria esplénica.",
+    "La arteria gastroepiploica."
+  ],
+  "correct_option": "La arteria cólica media.",
+  "first_answered_option": "La arteria cólica media.",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 1: se trata de una pregunta de anatomía que se responde con conocimientos puramente teóricos y poco deducible. #arteria mesentérica inferior cursa de manera asintomática en muchas ocasiones ya que el territorio que irriga puede recibir flujo proveniente# nos preguntan de qué otra arteria puede recibir flujo el marco colónico. En este caso es la arteria cólica media.      incorrecta 2,3,4,5: POR DESCARTE",
+  "first_argument_confidence": "100%",
+  "relations_raw": "(arteria mesentérica inferior, support, 1)\n(territorio, support, 1)\n(flujo, support, 1)\n(marco colónico, support, 1)\n(arteria cólica media, support, 1)\n(None)",
+  "evidence_relations": [
+    {
+      "evidence": "arteria mesentérica inferior",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "La arteria cólica media."
+    },
+    {
+      "evidence": "territorio",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "La arteria cólica media."
+    },
+    {
+      "evidence": "flujo",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "La arteria cólica media."
+    },
+    {
+      "evidence": "marco colónico",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "La arteria cólica media."
+    },
+    {
+      "evidence": "arteria cólica media",
+      "relation": " support",
+      "claim_num": 1,
+      "claim": "La arteria cólica media."
+    }
+  ],
+  "neutralized_argumentation": " The question at hand pertains to anatomy, answering with purely theoretical knowledge that is not easily deducible. In many instances, the mesenteric inferior artery courses asymptomatically due to its territory receiving blood flow from other sources. Given this inquiry concerning which other artery could supply the colonic segment, it's important to note that in such scenarios, the middle colic artery provides the necessary blood supply.\n\nFor clarity, it's essential to dismiss possible alternatives:\nIn this context, the superior mesenteric artery, ileocolic artery, and the right colic artery are not the ones supplying the colonic segment."
+}
+{
+  "specialization": "ENDOCRINOLOGÍA",
+  "case": "Una mujer de 27 años de edad consulta por presentar amenorrea secundaria de un año de evolución. No refiere antecedentes yatrogénicos. Analíticamente, la concentración de estradiol es inferior a la normalidad y el valor de prolactina es de 12 ng/mL. Indique cuál de las exploraciones que se citan a continuación solicitaría como primera medida para tratar de filiar el origen del trastorno:",
+  "options": [
+    "Resonancia magnética hipotálamo hipofisaria.",
+    "Cariotipo.",
+    "FSH basal.",
+    "Estimulación con gonadotropina coriónica."
+  ],
+  "correct_option": "FSH basal.",
+  "first_answered_option": "FSH basal.",
+  "answered_option_confidence": "100%",
+  "first_argument": "correcta 3: la primera prueba a realizar en esta paciente en el algoritmo diagnóstico, sería la medición de FSH. Es una paciente con una amenorrea SECUNDARIA en la que conocemos que tiene un hipogonadismo con un estradiol bajo. Debemos, ahora, conocer si este hipogonadismo es hiper o hipo gonadotropo y para ello debemos realizar la medición de la FSH #amenorrea secundaria# #estradiol es inferior a la normalidad#      incorrecta 1: la RMN sería la prueba a solicitar en caso de sospechar un tumor hipotálamo-hipofisario como posible causa de la amenorrea. El hecho de presentar una prolactina normal deshecha esta opción. @prolactina es de 12 ng/mL@      incorrecta 2: la prueba del cariotipo la utilizamos en los pacientes con sospecha de enfermedades genéticas que puedan cursar con amenorrea, como clásicamente puede ser la enfermedad de Turner. En este caso, se trataría de una amenorrea PRIMARIA. @amenorrea secundaria@      incorrecta 4: la estimulación con gonadotropina se utiliza una vez realizado el diagnóstico como tratamiento inductor de ovulación @para tratar de filiar el origen@",
+  "first_argument_confidence": "100%",
+  "relations_raw": "(amenorrea secundaria, support, 3)\n(estradiol es inferior a la normalidad, support, 3)\n(prolactina es de 12 ng/mL, attack, 1)\n(amenorrea secundaria, attack, 2)\n(para tratar de filiar el origen, attack, 4)",
+  "evidence_relations": [
+    {
+      "evidence": "amenorrea secundaria",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "FSH basal."
+    },
+    {
+      "evidence": "estradiol es inferior a la normalidad",
+      "relation": " support",
+      "claim_num": 3,
+      "claim": "FSH basal."
+    },
+    {
+      "evidence": "prolactina es de 12 ng/mL",
+      "relation": " attack",
+      "claim_num": 1,
+      "claim": "Resonancia magnética hipotálamo hipofisaria."
+    },
+    {
+      "evidence": "amenorrea secundaria",
+      "relation": " attack",
+      "claim_num": 2,
+      "claim": "Cariotipo."
+    },
+    {
+      "evidence": "para tratar de filiar el origen",
+      "relation": " attack",
+      "claim_num": 4,
+      "claim": "Estimulación con gonadotropina coriónica."
+    }
+  ],
+  "neutralized_argumentation": " The initial diagnostic test for this patient would be the measurement of Follicle-Stimulating Hormone (FSH). This is a case of secondary amenorrhea, where it is known that the patient has hypogonadism with low estradiol levels. At present, we aim to determine whether this hypogonadism is hyper or hypogonadotropic, and for this purpose, FSH measurement is necessary.\n\nGiven the normal prolactin level (12 ng/mL), the option of suspecting a hypothalamic-pituitary tumor as a possible cause of amenorrhea is dismissed.\n\nThe karyotype test is not relevant in this situation, as it is typically used for patients with genetic disease suspicions that may manifest with amenorrhea, such as Turner's syndrome. In this case, the amenorrhea is secondary, not primary.\n\nLastly, gonadotropin stimulation would be utilized post-diagnosis as a treatment to induce ovulation (for determining the origin)."
+}

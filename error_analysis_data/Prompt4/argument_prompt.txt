@@ -1,0 +1,15 @@
+Rewrite the following argument according to the rules below.
+
+Do:
+- Keep all the evidence, signs, symptoms, and medical context.
+- Maintain the diagnostic logic exactly as intended.
+- Produce a continuous, cohesive clinical explanation.
+- Use professional, concise English as found in clinical reasoning notes.
+
+Don’t:
+- Mention options, letters, numbers, or statements about correctness.
+- Add or infer new clinical information.
+- Introduce step-by-step reasoning or meta-explanations.
+
+Now apply these rules to:
+{argumentation}
