@@ -12,7 +12,7 @@ The write-up, methods, results, and error taxonomy are in [`docs/HITZ_Internship
 
 | Part | Role |
 |------|------|
-| [`data/CC-MIR.en-es/`](data/CC-MIR.en-es/) | **Public:** synthetic `demo_case_for_public_repo.json` for smoke tests. **Internal:** place real bilingual CC-MIR JSON here locally (never push; see `.gitignore` and `GITHUB_PUSH_CHECKLIST.md`). |
+| [`data/CC-MIR.en-es/`](data/CC-MIR.en-es/) | **Public:** synthetic `demo_case_for_public_repo.json` for smoke tests. **Internal:** place real bilingual CC-MIR JSON here locally (never push; see `.gitignore`). |
 | [`evaluation/analysis/`](evaluation/analysis/) | **Backing data** (CSV/JSON), **plot scripts**, and **generated figures** for the quantitative analysis in the report. |
 | [`evaluation/prompts/Prompt1`–`Prompt6`](evaluation/prompts/) | Six prompt architectures (P1–P6) from the study. |
 | [`evaluation/outputs/`](evaluation/outputs/) | Saved model outputs (JSONL), one folder per prompt. |
