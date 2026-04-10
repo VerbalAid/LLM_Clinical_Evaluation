@@ -1,17 +1,15 @@
-# Corpus folder (CC-MIR)
+# CC-MIR data in this repo
 
-The **full CC-MIR examination corpus** used for the internship research report is **HiTZ / internal only** and must **not** be pushed to a public GitHub repository.
+The **full CC-MIR examination corpus** I used for the internship lives under HiTZ’s internal rules — I **can’t** put those files on a public GitHub repo, so you won’t find the real cases here.
 
-## What this public repo includes
+## What I actually published
 
-- **`demo_case_for_public_repo.json`** — two **fully synthetic** items with the same JSON shape the evaluation scripts expect (`options`, `first_argument`, etc.). Use this to check that your Ollama setup runs.
+- **`demo_case_for_public_repo.json`** — two completely **made-up** vignettes with the same JSON fields my scripts expect (`options`, `first_argument`, …). I use it to check that Ollama and the prompt plumbing work end-to-end.
 
-## If you work at HiTZ (internal replication)
+## If you’re at HiTZ and re-running my setup
 
-1. Copy your approved CC-MIR JSON files into this folder **on your machine only**.
-2. Set the environment variable **`CC_MIR_CORPUS_FILE`** to the filename you use (for example `CC-MIR-2-M.es.json`), or edit `evaluation/main.py` / `Medllama_english_test.py` once locally.
-3. Never `git add` real corpus files — they are listed in `.gitignore`.
+1. Drop your approved CC-MIR JSON into this folder **on your machine**.
+2. Point the code at it with **`CC_MIR_CORPUS_FILE`** (e.g. `CC-MIR-2-M.es.json`), or tweak `evaluation/main.py` / `Medllama_english_test.py` once locally.
+3. I listed the real filenames in `.gitignore` on purpose — please don’t `git add` the actual corpus.
 
-## File name patterns ignored by git
-
-See the repository root `.gitignore` for `data/CC-MIR.en-es/` rules.
+The exact ignore rules for this directory are in the root `.gitignore`.

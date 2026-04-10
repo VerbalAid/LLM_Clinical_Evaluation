@@ -1,5 +1,5 @@
 {
-  "important_note": "These values match the internship research report (PDF): the full internal evaluation (72 scored runs per model, 216 total). They are NOT recalculated from the small public sample CSV in this repository.",
+  "important_note": "I copied these figures from my internship report (PDF): the full internal evaluation (72 scored runs per model, 216 total). They are not recomputed from the small public sample CSV in this repo.",
   "full_study_design": {
     "evaluations_per_model": 72,
     "total_evaluations": 216,

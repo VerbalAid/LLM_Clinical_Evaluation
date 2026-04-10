@@ -1,5 +1,3 @@
 # `data/original/`
 
-Reserved for optional local examples. Real clinical examples from the internal project are **not** shipped in the public repository.
-
-Do not commit raw internal JSON here; patterns are ignored via `.gitignore`.
+I left this folder as a placeholder for any extra local snippets I might drop in. Nothing sensitive from the internship ships in the public tree — anything raw I’d put here is covered by `.gitignore` so it doesn’t accidentally get committed.

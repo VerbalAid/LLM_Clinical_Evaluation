@@ -1,20 +1,17 @@
 """
-Statistical tests for the internship evaluation.
+Stats helper for my internship evaluation.
 
-There are TWO different things in this project:
+I’m comparing two different things:
 
-1) INTERNSHIP REPORT (full internal evaluation, n = 72 scores per model)
-   - The numbers in docs/HITZ_Internship_Report.pdf and in
-     data/published_report_results.json come from that full evaluation.
-   - Those raw score rows are not in the public repo (internal CC-MIR only).
+1) What I actually wrote up (full internal run, 72 scores per model)
+   — same numbers as in docs/HITZ_Internship_Report.pdf and
+     data/published_report_results.json. The raw rows never went on GitHub.
 
-2) PUBLIC SAMPLE (this GitHub-friendly repository)
-   - data/case_level_scores_public_sample.csv has 12 rows per model
-     (6 prompts × 2 example cases) for plots and learning the code.
-   - Friedman / Wilcoxon on this file will NOT match the report's chi-square;
-     that is expected.
+2) The tiny public CSV (12 rows per model)
+   — enough to exercise the code and redraw plots; Friedman / Wilcoxon here
+     won’t match the χ² in the PDF, and that’s fine.
 
-Run from the analysis folder:
+Run from here:
 
     cd evaluation/analysis
     python run_statistics.py
@@ -40,7 +37,7 @@ BONFERRONI_ALPHA = ALPHA / N_TESTS
 
 
 def load_report_reference():
-    """Load the published table values from the internship report (for printing)."""
+    """Load my JSON copy of the report tables (for printing)."""
     with open(REPORT_JSON, encoding="utf-8") as f:
         return json.load(f)
 
@@ -117,8 +114,8 @@ def main():
     report = load_report_reference()
     df = load_sample_scores()
 
-    # ----- Part A: what the internship report states (full internal n=72) -----
-    print_section_title("A) Values from the internship report (full internal evaluation)")
+    # ----- Part A: what I reported in the PDF (full n=72) -----
+    print_section_title("A) What’s in my internship report (full internal evaluation)")
     print(report["important_note"])
     print()
     ft = report["friedman_test_from_report"]
@@ -127,7 +124,7 @@ def main():
         ft["chi2"],
         ft["p_two_sided_description"],
     ))
-    print("\nPairwise Wilcoxon + Bonferroni (as stated in the report):")
+    print("\nPairwise Wilcoxon + Bonferroni (how I reported them):")
     for row in report["wilcoxon_pairwise_from_report_bonferroni"]:
         r_txt = row["effect_size_r"] if row["effect_size_r"] is not None else "n/a"
         print(
@@ -135,7 +132,7 @@ def main():
             f"({row['effect_label']})"
         )
 
-    print("\nTable 4 style means (composite, mean ± sd) from published_report_results.json:")
+    print("\nTable 4–style means (composite, mean ± sd) from my published_report_results.json:")
     for name, stats_block in report["table_4_model_performance"].items():
         m, s = stats_block["composite_mean_sd"]
         print(f"  - {name}: {m} ± {s}")
@@ -144,7 +141,7 @@ def main():
     print_section_title("B) Public sample CSV (12 rows per model)")
     desc = df.groupby("Model")["Total"].agg(["mean", "std", "count"])
     print(desc)
-    print("\n(This is NOT the same n as Table 4 in the internship report.)")
+    print("\n(Smaller n than my real Table 4 — expected for the public sample.)")
 
     # ----- Part C: run tests on the public sample -----
     print_section_title("C) Tests computed from the public sample only")
@@ -157,7 +154,7 @@ def main():
     else:
         print("Interpretation (sample): p >= 0.05 → no strong evidence of differences.")
     print(
-        "\nNote: this p-value will NOT match the report, because n and scores differ."
+        "\n(This p-value won’t match my PDF — different n and different score rows.)"
     )
 
     print(f"\nPairwise Wilcoxon (raw p-values). Bonferroni cutoff = {BONFERRONI_ALPHA:.4f}")
@@ -167,8 +164,8 @@ def main():
         print(f"  - {label}: W-like stat = {w_stat:.4f}, p = {p_raw:.6f} → {flag}")
 
     print_section_title("Done")
-    print("For formal claims, use the internship report PDF and published_report_results.json.")
-    print("For learning Python, use this script + the public sample CSV.")
+    print("If you’re citing results, go from my PDF + published_report_results.json.")
+    print("If you’re just learning the workflow, this script + the public CSV is enough.")
 
 
 if __name__ == "__main__":

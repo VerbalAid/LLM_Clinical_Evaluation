@@ -2,40 +2,40 @@
 
 **Repository:** [github.com/VerbalAid/LLM_Clinical_Evaluation](https://github.com/VerbalAid/LLM_Clinical_Evaluation)
 
-**Branches:** Current code is on **`main`** and **`master`** (same commit). If GitHub still shows an outdated “neutralisation” README and a flat file list, the site default is probably the legacy **`old`** branch — use the branch dropdown and pick **`main`**, then (repo owner) set **Settings → General → Default branch** to **`main`** and remove **`old`** under **Settings → Branches**.
+**Branches:** I work on **`main`** and **`master`** — they’re the same commit. If you ever land on an old “neutralisation” README and a flat list of files, that’s the legacy **`old`** branch; switch the branch dropdown to **`main`**. (I’ve set the default branch on GitHub to **`main`** and dropped **`old`**, so you shouldn’t see that anymore.)
 
-HiTZ Center / UPV-EHU internship work: **evaluating large language models** on the task of turning **Spanish MIR-style examination justifications** into **unified English clinical narratives** while preserving medical specificity.
+This repo is my **HiTZ Center / UPV-EHU internship** project: I evaluated **large language models** on turning **Spanish MIR-style examination justifications** into **unified English clinical narratives** while trying to keep medical specificity intact.
 
-The write-up, methods, results, and error taxonomy are in [`docs/HITZ_Internship_Report.pdf`](docs/HITZ_Internship_Report.pdf).
-
----
-
-## What this repository contains
-
-| Part | Role |
-|------|------|
-| [`data/CC-MIR.en-es/`](data/CC-MIR.en-es/) | **Public:** synthetic `demo_case_for_public_repo.json` for smoke tests. **Internal:** place real bilingual CC-MIR JSON here locally (never push; see `.gitignore`). |
-| [`evaluation/analysis/`](evaluation/analysis/) | **Backing data** (CSV/JSON), **plot scripts**, and **generated figures** for the quantitative analysis in the report. |
-| [`evaluation/prompts/Prompt1`–`Prompt6`](evaluation/prompts/) | Six prompt architectures (P1–P6) from the study. |
-| [`evaluation/outputs/`](evaluation/outputs/) | Saved model outputs (JSONL), one folder per prompt. |
-| [`evaluation/main.py`](evaluation/main.py) | Ollama runner (configure model name + prompt path). |
-| [`evaluation/Medllama_english_test.py`](evaluation/Medllama_english_test.py) | MedLlama English-input follow-up runs (cross-language comparison in the report). |
-| [`scripts/redact_report_title_date.py`](scripts/redact_report_title_date.py) | Optional: redact “April 2026” on the PDF title slide (requires PyMuPDF). |
+The full write-up — methods, results, error taxonomy — is in [`docs/HITZ_Internship_Report.pdf`](docs/HITZ_Internship_Report.pdf).
 
 ---
 
-## Study summary (from the report)
+## What’s in here
 
-- **Models:** MedLlama-2-7B, Mistral-7B-Instruct, Qwen2.5-1.5B (via Ollama).
-- **Design:** 72 evaluations per model (12 cases × 6 prompts), **216** runs total.
-- **Scoring:** Three dimensions (0–2 each): **Fidelity**, **Restructuring**, **Clinical clarity** (composite 0–6).
-- **Main finding:** Models often **mix up format change with semantic generalisation** (specificity loss, hypernym substitution); instruction-following (Mistral) mattered more than medical pretraining alone.
-
-**Reproducibility (Appendix A):** random seed 42, temperature 0.7, max tokens 512, top-p 0.95 (Colab-style setup described in the PDF).
+| Part | What it is |
+|------|------------|
+| [`data/CC-MIR.en-es/`](data/CC-MIR.en-es/) | I ship a small **synthetic** demo JSON so anyone can sanity-check Ollama. The real CC-MIR files stayed internal at HiTZ; I never put them on the public repo (see `.gitignore`). |
+| [`evaluation/analysis/`](evaluation/analysis/) | The CSV/JSON I used to back the plots, plus scripts to regenerate figures and run the stats. |
+| [`evaluation/prompts/Prompt1`–`Prompt6`](evaluation/prompts/) | The six prompt designs (P1–P6) I ran in the study. |
+| [`evaluation/outputs/`](evaluation/outputs/) | Where JSONL runs go when you execute the eval scripts locally. |
+| [`evaluation/main.py`](evaluation/main.py) | My Ollama runner — tweak `MODEL_NAME` and the prompt path if you replicate. |
+| [`evaluation/Medllama_english_test.py`](evaluation/Medllama_english_test.py) | Extra MedLlama runs on **English** inputs (for the cross-language bit in the report). |
+| [`scripts/redact_report_title_date.py`](scripts/redact_report_title_date.py) | I used this once to strip “April 2026” from the title slide of the PDF; needs PyMuPDF if you reuse it. |
 
 ---
 
-## Setup
+## What I actually ran (summary)
+
+- **Models:** MedLlama-2-7B, Mistral-7B-Instruct, Qwen2.5-1.5B (through Ollama).
+- **Design:** 72 scored runs per model (12 cases × 6 prompts), **216** in total.
+- **Scores:** Three dimensions (0–2 each): **Fidelity**, **Restructuring**, **Clinical clarity** → **0–6** overall.
+- **What stuck with me:** Models often **blur “change the format” with “water down the medicine”** — specificity loss, hypernym swapping. **Mistral** (generalist, strong on instructions) beat **MedLlama** on this task more than I expected.
+
+**How I ran inference (Appendix A in the PDF):** seed 42, temperature 0.7, max tokens 512, top-p 0.95 — Colab-class GPU setup, described properly in the report.
+
+---
+
+## How to set it up
 
 ```bash
 cd Clinical
@@ -44,28 +44,24 @@ source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Install and pull the Ollama models you use, for example:
-
-`medllama2:7b`, `mistral:7b-instruct`, `qwen2.5:1.5b` (exact tags must match your `MODEL_NAME` strings in the scripts).
+Pull whatever Ollama models you’re using — I had things like `medllama2:7b`, `mistral:7b-instruct`, `qwen2.5:1.5b`. The names in the scripts need to match your local tags.
 
 ---
 
-## Running
+## How I run things
 
 ### Inference (Ollama)
 
-From the `evaluation` directory:
-
 ```bash
 cd evaluation
-# Edit MODEL_NAME and ARG_PROMPT_FILE in main.py as needed
+# I edit MODEL_NAME and ARG_PROMPT_FILE in main.py when I switch model/prompt
 python main.py
-python Medllama_english_test.py   # optional: English-source MedLlama runs
+python Medllama_english_test.py   # only when I want the English-source MedLlama experiment
 ```
 
-Outputs are written under `evaluation/outputs/Prompt{N}/` as JSONL.
+JSONL lands under `evaluation/outputs/Prompt{N}/`.
 
-### Analysis figures
+### Plots and stats
 
 ```bash
 cd evaluation/analysis
@@ -74,11 +70,11 @@ python plot_medllama_crosslingual.py
 python run_statistics.py
 ```
 
-PNGs are written to `evaluation/analysis/figures/`. See [`evaluation/analysis/README.md`](evaluation/analysis/README.md) for the full list of backing CSV/JSON files.
+PNGs go to `evaluation/analysis/figures/`. There’s a bit more detail on the data files in [`evaluation/analysis/README.md`](evaluation/analysis/README.md).
 
 ---
 
-## Layout
+## Folder layout
 
 ```
 Clinical/
@@ -96,17 +92,17 @@ Clinical/
     ├── Medllama_english_test.py
     ├── analysis/
     │   ├── README.md
-    │   ├── data/           # scores, mappings, report table values
-    │   ├── figures/        # generated by plot_*.py
+    │   ├── data/
+    │   ├── figures/
     │   ├── plot_main_study.py
     │   ├── plot_medllama_crosslingual.py
     │   └── run_statistics.py
     ├── prompts/
-    └── outputs/            # JSONL model runs
+    └── outputs/
 ```
 
 ---
 
 ## Licence
 
-Not specified in this checkout; add a `LICENSE` file if you publish the repo publicly.
+I didn’t attach a formal **LICENSE** file when I published this. If you fork or reuse it in public, feel free to add whatever licence fits your situation — I’m not claiming legal advice here.

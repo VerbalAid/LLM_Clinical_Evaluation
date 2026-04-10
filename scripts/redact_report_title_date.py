@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Redact 'April 2026' on page 1 of the internship PDF (title slide). Requires pymupdf."""
+"""Strip 'April 2026' from page 1 of my internship PDF (title slide). Needs pymupdf."""
 
 import sys
 
