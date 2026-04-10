@@ -10,7 +10,7 @@ This is my **HiTZ Center / UPV-EHU** (*MSc Language Analysis and Processing*) in
 
 **Core task:** Turn **option-based, eliminative exam justifications** (MIR-style reasoning: rule out options A–E with evidence) into a **single, flowing clinical narrative**, under a hard rule of **no new facts, no dropped facts, no vague paraphrase of specific medicine** (numbers, anatomy, time course, and terminology should stay as specific as in the source).
 
-**Languages:** The **main study** is **Spanish source → English narrative**, on the **CC-MIR** (CasiMedicos-MIR) corpus—**216** scored generations (**72 per model** × **three models** × **six prompt architectures**). I also ran a **MedLlama follow-up on English source → English narrative** to separate **language mismatch** from **instruction-following and restructuring ability** (report §4.5).
+**Languages (what you can verify here):** The **written report** ([`docs/HITZ_Internship_Report.pdf`](docs/HITZ_Internship_Report.pdf)) frames the main study as **Spanish MIR-style justifications → English narrative** for all three models (**216** scored runs: **72 per model**, **six prompts**). The same report’s **§4.5** compares **MedLlama** on **Spanish vs English CC-MIR input** to separate **language** from **task** effects—backed in-repo by [`evaluation/analysis/data/medllama_resources_by_prompt.csv`](evaluation/analysis/data/medllama_resources_by_prompt.csv) and [`published_report_results.json`](evaluation/analysis/data/published_report_results.json) (`table_5_medllama_spanish_vs_english`: `Spanish_input` vs `English_input`). **Prompts** always ask for **English output**; Prompt 1 even references Spanish exam markers (e.g. `(rechaza)`), which fits Spanish source text. **This public repo** ships an **English** demo corpus and wires [`evaluation/main.py`](evaluation/main.py) to it by default; [`Medllama_english_test.py`](evaluation/Medllama_english_test.py) is the English-input helper I kept for replication. I did **not** keep raw JSONL on GitHub, so the README cannot honestly recover “what I ran first” day to day—only the **PDF + analysis tables** do.
 
 **Models:** MedLlama-2-7B (medical specialist), Mistral-7B-Instruct (generalist), Qwen2.5-1.5B (small baseline), via Ollama.
 
@@ -29,7 +29,7 @@ The full write-up is in [`docs/HITZ_Internship_Report.pdf`](docs/HITZ_Internship
 | [`evaluation/prompts/Prompt1`–`Prompt6`](evaluation/prompts/) | The six prompt designs (P1–P6) I ran in the study. |
 | [`evaluation/outputs/`](evaluation/outputs/) | Where JSONL runs go when you execute the eval scripts locally. |
 | [`evaluation/main.py`](evaluation/main.py) | My Ollama runner — tweak `MODEL_NAME` and the prompt path if you replicate. |
-| [`evaluation/Medllama_english_test.py`](evaluation/Medllama_english_test.py) | MedLlama on **English** source text (**English → English** restructuring), to compare with the Spanish-input runs in the report. |
+| [`evaluation/Medllama_english_test.py`](evaluation/Medllama_english_test.py) | Runner for **English** CC-MIR input with MedLlama (matches the public demo wiring; Spanish-input MedLlama is part of the §4.5 comparison in the report). |
 | [`scripts/redact_report_title_date.py`](scripts/redact_report_title_date.py) | I used this once to strip “April 2026” from the title slide of the PDF; needs PyMuPDF if you reuse it. |
 
 ---
