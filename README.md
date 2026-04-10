@@ -4,7 +4,7 @@
 
 **Branches:** I work on **`main`** and **`master`** — they’re the same commit. If you ever land on an old “neutralisation” README and a flat list of files, that’s the legacy **`old`** branch; switch the branch dropdown to **`main`**. (I’ve set the default branch on GitHub to **`main`** and dropped **`old`**, so you shouldn’t see that anymore.)
 
-This repo is my **HiTZ Center / UPV-EHU internship** project: I evaluated **large language models** on turning **Spanish MIR-style examination justifications** into **unified English clinical narratives** while trying to keep medical specificity intact.
+This repo is my **HiTZ Center / UPV-EHU internship** project: I evaluated **large language models** on restructuring **clinical exam-style justifications** into **unified clinical narratives**—mostly **Spanish → English**, and in a follow-up **English → English** with MedLlama—while trying to keep medical specificity intact.
 
 The full write-up — methods, results, error taxonomy — is in [`docs/HITZ_Internship_Report.pdf`](docs/HITZ_Internship_Report.pdf).
 
@@ -19,7 +19,7 @@ The full write-up — methods, results, error taxonomy — is in [`docs/HITZ_Int
 | [`evaluation/prompts/Prompt1`–`Prompt6`](evaluation/prompts/) | The six prompt designs (P1–P6) I ran in the study. |
 | [`evaluation/outputs/`](evaluation/outputs/) | Where JSONL runs go when you execute the eval scripts locally. |
 | [`evaluation/main.py`](evaluation/main.py) | My Ollama runner — tweak `MODEL_NAME` and the prompt path if you replicate. |
-| [`evaluation/Medllama_english_test.py`](evaluation/Medllama_english_test.py) | Extra MedLlama runs on **English** inputs (for the cross-language bit in the report). |
+| [`evaluation/Medllama_english_test.py`](evaluation/Medllama_english_test.py) | MedLlama on **English** source text (**English → English** restructuring), to compare with the Spanish-input runs in the report. |
 | [`scripts/redact_report_title_date.py`](scripts/redact_report_title_date.py) | I used this once to strip “April 2026” from the title slide of the PDF; needs PyMuPDF if you reuse it. |
 
 ---
