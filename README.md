@@ -2,11 +2,21 @@
 
 **Repository:** [github.com/VerbalAid/LLM_Clinical_Evaluation](https://github.com/VerbalAid/LLM_Clinical_Evaluation)
 
-**Branches:** I work on **`main`** and **`master`** — they’re the same commit. If you ever land on an old “neutralisation” README and a flat list of files, that’s the legacy **`old`** branch; switch the branch dropdown to **`main`**. (I’ve set the default branch on GitHub to **`main`** and dropped **`old`**, so you shouldn’t see that anymore.)
+**Branches:** Use **`main`** for this project. **`old`** is only an archived early upload (different layout); switch to **`main`** in the branch menu if GitHub ever opens the wrong one.
 
-This repo is my **HiTZ Center / UPV-EHU internship** project: I evaluated **large language models** on restructuring **clinical exam-style justifications** into **unified clinical narratives**—mostly **Spanish → English**, and in a follow-up **English → English** with MedLlama—while trying to keep medical specificity intact.
+### What this project is
 
-The full write-up — methods, results, error taxonomy — is in [`docs/HITZ_Internship_Report.pdf`](docs/HITZ_Internship_Report.pdf).
+This is my **HiTZ Center / UPV-EHU** (*MSc Language Analysis and Processing*) internship: **evaluating LLMs on a constrained clinical text restructuring task**—the same framing as in [*Evaluating Large Language Models for Clinical Text Restructuring*](docs/HITZ_Internship_Report.pdf) (systematic error taxonomy + specificity analysis).
+
+**Core task:** Turn **option-based, eliminative exam justifications** (MIR-style reasoning: rule out options A–E with evidence) into a **single, flowing clinical narrative**, under a hard rule of **no new facts, no dropped facts, no vague paraphrase of specific medicine** (numbers, anatomy, time course, and terminology should stay as specific as in the source).
+
+**Languages:** The **main study** is **Spanish source → English narrative**, on the **CC-MIR** (CasiMedicos-MIR) corpus—**216** scored generations (**72 per model** × **three models** × **six prompt architectures**). I also ran a **MedLlama follow-up on English source → English narrative** to separate **language mismatch** from **instruction-following and restructuring ability** (report §4.5).
+
+**Models:** MedLlama-2-7B (medical specialist), Mistral-7B-Instruct (generalist), Qwen2.5-1.5B (small baseline), via Ollama.
+
+**Evaluation:** Manual **three-dimensional** rubric—**Fidelity**, **Restructuring**, **Clinical clarity** (0–2 each, **6** total)—plus a **specificity-preservation** lens and a **four-type error taxonomy** over **127** coded failures (lexical fabrication, value distortion, temporal shift, anatomical mix-ups).
+
+The full write-up is in [`docs/HITZ_Internship_Report.pdf`](docs/HITZ_Internship_Report.pdf).
 
 ---
 
