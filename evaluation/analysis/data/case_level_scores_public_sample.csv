@@ -1,0 +1,37 @@
+Model,Prompt,Case,Fidelity,Restructuring,Clarity,Total,Time_mins,RAM_GB
+MedLlama,P1,Thoracic trauma,0,1,0,1,20,7.3
+MedLlama,P1,Knee injury,0,1,0,1,20,7.3
+MedLlama,P2,Endocrino A,1,1,1,3,10,7.1
+MedLlama,P2,Paliativos B,2,2,2,6,10,7.1
+MedLlama,P3,Gine 1,0,1,1,2,6,7.3
+MedLlama,P3,Endocrino 2,1,1,1,3,6,7.3
+MedLlama,P4,Infecciosas A,0,1,1,2,5,7.0
+MedLlama,P4,Cardio B,2,2,2,6,5,7.0
+MedLlama,P5,Gine 1,1,2,1,4,3,6.9
+MedLlama,P5,Gine 2,0,0,0,0,3,6.9
+MedLlama,P6,Cardio AF,0,0,1,1,4,7.0
+MedLlama,P6,Genética Turner,1,0,1,2,4,7.0
+Qwen,P1,Pediatría,0,0,0,0,3,5.5
+Qwen,P1,Hematología,0,0,1,1,3,5.5
+Qwen,P2,Infecciosas,2,1,2,5,3.7,5.7
+Qwen,P2,Plástica,2,2,1,5,3.7,5.7
+Qwen,P3,Turner Syndrome,2,2,2,6,1.31,5.5
+Qwen,P3,Traumatic Shock,1,2,1,4,1.31,5.5
+Qwen,P4,Ginecología,0,2,0,2,1.67,6.0
+Qwen,P4,Nefrología,0,1,0,1,1.67,6.0
+Qwen,P5,Nefrología AIN,0,1,0,1,1.82,5.6
+Qwen,P5,Digestivo,0,0,1,1,1.82,5.6
+Qwen,P6,Psiquiatría Litio,0.5,1,0,1.5,1.38,5.7
+Qwen,P6,Neumología,1,1.5,1,3.5,1.38,5.7
+Mistral,P1,Cardiology,0.5,1,0.5,2.0,13,6.7
+Mistral,P1,Pediatrics,1.5,1,1.5,4.0,13,6.7
+Mistral,P2,Digestive Surgery,1.8,1.8,1.7,5.3,4.75,6.8
+Mistral,P2,Neurology,1.5,1.2,1.5,4.2,4.75,6.8
+Mistral,P3,Digestive Surgery,0.6,1.6,1.2,3.4,5.63,6.8
+Mistral,P3,Psychiatry,1.9,1.7,1.8,5.4,5.63,6.8
+Mistral,P4,Anatomy,0.4,1.2,0.8,2.4,4.17,6.8
+Mistral,P4,Endocrinology,1.8,1.6,1.7,5.1,4.17,6.8
+Mistral,P5,Urgencias,1.7,1.6,1.8,5.1,4.39,6.8
+Mistral,P5,Infecciosas RSV,1.0,1.3,1.6,3.9,4.39,6.8
+Mistral,P6,Ginecología,1.6,1.7,1.8,5.1,6.09,6.9
+Mistral,P6,Psiquiatría,0.7,0.4,0.5,1.6,6.09,6.9

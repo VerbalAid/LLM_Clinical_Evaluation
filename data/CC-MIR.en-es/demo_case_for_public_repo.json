@@ -1,0 +1,26 @@
+[
+  {
+    "specialization": "DEMO",
+    "case": "Synthetic teaching example only — not real patient or exam content.",
+    "options": [
+      "Option A: watchful waiting only.",
+      "Option B: refer for specialist assessment.",
+      "Option C: order urgent imaging without further history."
+    ],
+    "correct_option": "Option B",
+    "first_answered_option": "Option B",
+    "first_argument": "Correct 2: the scenario supports specialist referral. Incorrect 1: watchful waiting ignores red flags #(discard)#."
+  },
+  {
+    "specialization": "DEMO",
+    "case": "Second synthetic item so random.sample(..., 2) works in the demo script.",
+    "options": [
+      "Option A: do nothing.",
+      "Option B: document and follow protocol.",
+      "Option C: discharge immediately."
+    ],
+    "correct_option": "Option B",
+    "first_answered_option": "Option B",
+    "first_argument": "Correct 2: protocol requires documentation. Incorrect 3: immediate discharge is unsafe #(discard)#."
+  }
+]

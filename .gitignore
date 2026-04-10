@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# --- Internal / sensitive data (do not push to public GitHub) ---
+
+# Real CC-MIR corpus files (keep only demo_case_for_public_repo.json + README)
+data/CC-MIR.en-es/*
+!data/CC-MIR.en-es/README.md
+!data/CC-MIR.en-es/demo_case_for_public_repo.json
+
+# Optional local dumps
+data/original/*.json
+
+# Model outputs may repeat clinical-style text from the internal corpus
+evaluation/outputs/**/*.jsonl

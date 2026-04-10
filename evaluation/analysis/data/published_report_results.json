@@ -1,0 +1,129 @@
+{
+  "important_note": "These values match the internship research report (PDF): the full internal evaluation (72 scored runs per model, 216 total). They are NOT recalculated from the small public sample CSV in this repository.",
+  "full_study_design": {
+    "evaluations_per_model": 72,
+    "total_evaluations": 216,
+    "structure": "12 clinical cases × 6 prompt architectures × 3 models"
+  },
+  "table_4_model_performance": {
+    "Mistral-7B": {
+      "composite_mean_sd": [3.61, 1.14],
+      "fidelity_mean_sd": [1.06, 0.64],
+      "restructuring_mean_sd": [1.5, 0.5],
+      "clarity_mean_sd": [1.06, 0.23],
+      "hallucination_rate_pct": 37
+    },
+    "MedLlama-2-7B": {
+      "composite_mean_sd": [2.56, 1.17],
+      "fidelity_mean_sd": [0.53, 0.6],
+      "restructuring_mean_sd": [1.06, 0.64],
+      "clarity_mean_sd": [0.97, 0.16],
+      "hallucination_rate_pct": 67
+    },
+    "Qwen2.5-1.5B": {
+      "composite_mean_sd": [1.97, 1.91],
+      "fidelity_mean_sd": [0.44, 0.81],
+      "restructuring_mean_sd": [1.0, 0.67],
+      "clarity_mean_sd": [0.53, 0.62],
+      "hallucination_rate_pct": 64
+    }
+  },
+  "friedman_test_from_report": {
+    "chi2": 24.31,
+    "df": 2,
+    "p_two_sided_description": "p < 0.001"
+  },
+  "wilcoxon_pairwise_from_report_bonferroni": [
+    {
+      "comparison": "Mistral vs MedLlama",
+      "p_description": "p < 0.001",
+      "effect_size_r": 0.47,
+      "effect_label": "medium-large"
+    },
+    {
+      "comparison": "Mistral vs Qwen",
+      "p_description": "p < 0.001",
+      "effect_size_r": 0.52,
+      "effect_label": "large"
+    },
+    {
+      "comparison": "MedLlama vs Qwen",
+      "p_description": "p = 0.34 (not significant)",
+      "effect_size_r": null,
+      "effect_label": null
+    }
+  ],
+  "table_2_prompt_architecture_mean_scores_out_of_6": {
+    "P1": 1.0,
+    "P2": 4.5,
+    "P3": 3.8,
+    "P4": 3.2,
+    "P5": 1.5,
+    "P6": 2.8
+  },
+  "table_5_medllama_spanish_vs_english": {
+    "Spanish_input": {
+      "Fidelity": [0.67, 2],
+      "Restructuring": [1.0, 2],
+      "Clarity": [0.92, 2],
+      "Composite": [2.58, 6]
+    },
+    "English_input": {
+      "Fidelity": [1.15, 2],
+      "Restructuring": [1.13, 2],
+      "Clarity": [1.23, 2],
+      "Composite": [3.51, 6]
+    }
+  },
+  "table_16_error_taxonomy_n127": {
+    "Lexical_fabrication_pct": 31,
+    "Value_distortion_pct": 28,
+    "Temporal_manipulation_pct": 24,
+    "Anatomical_confusion_pct": 17,
+    "by_model_counts": {
+      "MedLlama": 48,
+      "Qwen": 52,
+      "Mistral": 27
+    }
+  },
+  "table_18_specificity_loss_counts": {
+    "MedLlama": {
+      "values_dropped": 28,
+      "values_generalised": 12,
+      "terms_hypernymed": 18,
+      "qualifiers_lost": 22,
+      "preserved_correctly": 20,
+      "preservation_rate_pct": 20
+    },
+    "Qwen": {
+      "values_dropped": 31,
+      "values_generalised": 15,
+      "terms_hypernymed": 22,
+      "qualifiers_lost": 19,
+      "preserved_correctly": 13,
+      "preservation_rate_pct": 13
+    },
+    "Mistral": {
+      "values_dropped": 14,
+      "values_generalised": 8,
+      "terms_hypernymed": 9,
+      "qualifiers_lost": 12,
+      "preserved_correctly": 57,
+      "preservation_rate_pct": 57
+    },
+    "total_lost": {
+      "values_dropped": 73,
+      "values_generalised": 35,
+      "terms_hypernymed": 49,
+      "qualifiers_lost": 53,
+      "preserved_correctly": 90,
+      "overall_preservation_rate_pct": 30
+    }
+  },
+  "table_17_reproducibility": {
+    "random_seed": 42,
+    "temperature": 0.7,
+    "max_tokens": 512,
+    "top_p": 0.95
+  }
+}

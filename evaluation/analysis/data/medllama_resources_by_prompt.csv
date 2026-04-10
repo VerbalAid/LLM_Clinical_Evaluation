@@ -1,0 +1,13 @@
+Prompt,Language,Time_mins,RAM_GB,Mean_total_score_spanish
+P1,Spanish,20.0,7.3,1.0
+P2,Spanish,10.0,7.1,4.5
+P3,Spanish,6.0,7.3,2.5
+P4,Spanish,5.0,7.0,4.25
+P5,Spanish,3.0,6.9,2.5
+P6,Spanish,4.0,7.0,1.5
+P1,English,11.0,7.3,
+P2,English,7.0,7.0,
+P3,English,3.0,7.1,
+P4,English,5.0,7.0,
+P5,English,2.0,7.0,
+P6,English,2.0,7.1,
