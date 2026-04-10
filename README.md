@@ -2,6 +2,8 @@
 
 **Repository:** [github.com/VerbalAid/LLM_Clinical_Evaluation](https://github.com/VerbalAid/LLM_Clinical_Evaluation)
 
+**Branches:** Current code is on **`main`** and **`master`** (same commit). If GitHub still shows an outdated “neutralisation” README and a flat file list, the site default is probably the legacy **`old`** branch — use the branch dropdown and pick **`main`**, then (repo owner) set **Settings → General → Default branch** to **`main`** and remove **`old`** under **Settings → Branches**.
+
 HiTZ Center / UPV-EHU internship work: **evaluating large language models** on the task of turning **Spanish MIR-style examination justifications** into **unified English clinical narratives** while preserving medical specificity.
 
 The write-up, methods, results, and error taxonomy are in [`docs/HITZ_Internship_Report.pdf`](docs/HITZ_Internship_Report.pdf).
