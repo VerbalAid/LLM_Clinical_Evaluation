@@ -1,5 +1,7 @@
 # Clinical text restructuring — LLM evaluation
 
+**Repository:** [github.com/VerbalAid/LLM_Clinical_Evaluation](https://github.com/VerbalAid/LLM_Clinical_Evaluation)
+
 HiTZ Center / UPV-EHU internship work: **evaluating large language models** on the task of turning **Spanish MIR-style examination justifications** into **unified English clinical narratives** while preserving medical specificity.
 
 The write-up, methods, results, and error taxonomy are in [`docs/HITZ_Internship_Report.pdf`](docs/HITZ_Internship_Report.pdf).
