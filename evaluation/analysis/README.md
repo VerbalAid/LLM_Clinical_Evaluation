@@ -13,7 +13,6 @@ This is where I kept the **tables and numbers** behind the internship report, pl
 | `medllama_resources_by_prompt.csv` | Time and RAM by prompt for English vs Spanish MedLlama. |
 | `medllama_spanish_dimension_means.json` | Aggregate Spanish-side dimension means for the comparison plots. |
 
-I didn’t duplicate raw JSONL generations here — those live under `evaluation/outputs/` when you run the eval scripts yourself.
 
 ## Scripts
 
@@ -24,11 +23,6 @@ python plot_medllama_crosslingual.py
 python run_statistics.py
 ```
 
-Figures drop into `figures/`. I forced matplotlib’s **Agg** backend so it runs headless on a server without a GUI.
-
-## PDF title slide
-
-I redacted **“April 2026”** on page 1 of `docs/HITZ_Internship_Report.pdf` for the version in this repo. If you need to do the same on another copy:
 
 ```bash
 # from repo root, with venv active
